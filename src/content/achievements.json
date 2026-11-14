@@ -1,0 +1,50 @@
+[
+  {
+    "id": "primeira-aula",
+    "titulo": "Primeira aula",
+    "descricao": "Concluiu sua primeira aula.",
+    "icone": "star"
+  },
+  {
+    "id": "cinco-aulas",
+    "titulo": "Cinco aulas",
+    "descricao": "Concluiu 5 aulas.",
+    "icone": "medal"
+  },
+  {
+    "id": "dez-aulas",
+    "titulo": "Dez aulas",
+    "descricao": "Concluiu 10 aulas.",
+    "icone": "trophy"
+  },
+  {
+    "id": "tres-dias",
+    "titulo": "3 dias seguidos",
+    "descricao": "Estudou 3 dias seguidos.",
+    "icone": "flame"
+  },
+  {
+    "id": "sete-dias",
+    "titulo": "7 dias seguidos",
+    "descricao": "Estudou 7 dias seguidos.",
+    "icone": "flame"
+  },
+  {
+    "id": "uma-hora",
+    "titulo": "1 hora de estudo",
+    "descricao": "Somou 1 hora de estudo cronometrado.",
+    "icone": "clock"
+  },
+  {
+    "id": "modulo-1",
+    "titulo": "Módulo 1 concluído",
+    "descricao": "Concluiu \"Conhecendo o teclado\".",
+    "icone": "award"
+  },
+  {
+    "id": "modulo-2",
+    "titulo": "Módulo 2 concluído",
+    "descricao": "Concluiu \"Posicionamento das mãos\".",
+    "icone": "award"
+  }
+]

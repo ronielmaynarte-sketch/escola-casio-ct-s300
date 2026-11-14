@@ -1,0 +1,1757 @@
+[
+  {
+    "id": "m1",
+    "numero": 1,
+    "titulo": "Conhecendo o teclado",
+    "descricao": "Descubra o seu Casio CT-S300, os botões, as teclas e as notas.",
+    "aulas": [
+      {
+        "id": "m1-a1",
+        "titulo": "Conhecendo o Casio CT-S300",
+        "status": "pronta",
+        "objetivo": "Conhecer o seu teclado: quantas teclas ele tem, o que ele sabe fazer e como ele recebe energia.",
+        "vaiAprender": [
+          "O que é um teclado eletrônico e um teclado arranjador",
+          "Quantas teclas brancas e pretas o CT-S300 tem",
+          "Quantos sons, ritmos e canções vêm dentro dele",
+          "As duas formas de ligar o teclado na energia"
+        ],
+        "explicacao": [
+          "O Casio CT-S300 é um **teclado eletrônico**. Isso quer dizer que ele faz som por circuitos eletrônicos, e não por cordas e martelos como um piano de madeira. Por isso ele é leve, pode funcionar com pilhas e tem muitos sons diferentes.",
+          "Ele também é um **teclado arranjador**. \"Arranjo\" é o acompanhamento de uma música (bateria, baixo, outros instrumentos). O teclado arranjador consegue tocar esse acompanhamento sozinho enquanto você toca.",
+          "O CT-S300 tem **61 teclas**: **36 brancas** e **25 pretas**. A tecla mais à esquerda é a nota **Dó 2** (escrita **C2**) e a mais à direita é o **Dó 7** (**C7**). O número depois da nota mostra a altura do som: número menor = som mais **grave** (grosso), número maior = som mais **agudo** (fino).",
+          "Dentro dele existem **400 sons**, também chamados de **timbres**. Timbre é a \"voz\" do instrumento: é o que faz um piano soar diferente de um violão, mesmo tocando a mesma nota. O primeiro da lista é o **001 STEREO GRAND PIANO** (um piano de cauda).",
+          "Ele traz também **77 ritmos** (batidas prontas de acompanhamento, como pop, rock e baladas) e **60 canções** gravadas, que você pode ouvir e usar para praticar.",
+          "Para funcionar, o teclado precisa de energia de uma destas duas formas:\n- **6 pilhas AA** (pilhas pequenas comuns);\n- o **adaptador AD-E95100L**, ligado na entrada **DC 9.5V**, que fica na parte de trás do teclado."
+        ],
+        "teclas": [
+          36,
+          60,
+          96
+        ],
+        "dedos": {},
+        "exercicioGuiado": [
+          "Coloque o teclado em uma mesa ou suporte firme, com as teclas viradas para você.",
+          "Olhe da esquerda para a direita: as teclas da esquerda fazem sons graves e as da direita fazem sons agudos.",
+          "No teclado da tela abaixo, toque a primeira tecla da esquerda (Dó 2) e depois a última da direita (Dó 7). Perceba a diferença entre grave e agudo.",
+          "Conte em voz alta: 61 teclas no total, 36 brancas e 25 pretas.",
+          "Olhe a parte de trás do seu CT-S300 e encontre a entrada escrita DC 9.5V."
+        ],
+        "tempos": {
+          "explicacao": 4,
+          "observacao": 2,
+          "pratica": 3,
+          "exercicio": 3
+        },
+        "desafio": "Responda às perguntas sobre o seu teclado sem olhar a explicação.",
+        "criterio": {
+          "tipo": "quiz",
+          "perguntas": [
+            {
+              "pergunta": "Quantas teclas tem o Casio CT-S300?",
+              "opcoes": [
+                "49",
+                "61",
+                "76",
+                "88"
+              ],
+              "correta": 1
+            },
+            {
+              "pergunta": "Quantas teclas pretas ele tem?",
+              "opcoes": [
+                "25",
+                "36",
+                "30",
+                "20"
+              ],
+              "correta": 0
+            },
+            {
+              "pergunta": "Quantos sons (timbres) existem dentro dele?",
+              "opcoes": [
+                "60",
+                "77",
+                "400",
+                "1000"
+              ],
+              "correta": 2
+            },
+            {
+              "pergunta": "Quantas pilhas AA ele usa?",
+              "opcoes": [
+                "4",
+                "6",
+                "8",
+                "Ele não usa pilhas"
+              ],
+              "correta": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "m1-a2",
+        "titulo": "Como ligar e desligar",
+        "status": "pronta",
+        "objetivo": "Ligar, ajustar o volume e desligar o CT-S300 do jeito certo.",
+        "vaiAprender": [
+          "Como colocar o teclado na energia (pilhas ou adaptador)",
+          "Onde fica e como usar o botão P (liga/desliga)",
+          "Como aumentar e diminuir o volume",
+          "Como desligar sem erro"
+        ],
+        "explicacao": [
+          "**Passo 1 – Energia.** Use uma das duas opções: coloque **6 pilhas AA** no compartimento de pilhas (fica embaixo do teclado), respeitando o lado + e − de cada pilha; **ou** ligue o **adaptador AD-E95100L** na entrada **DC 9.5V**, na parte de trás, e depois na tomada.",
+          "**Passo 2 – Ligar.** Aperte o botão **P** (de \"power\", que quer dizer energia). O visor acende. Isso significa que o teclado está ligado.",
+          "**Passo 3 – Volume.** Use os botões **VOLUME −** (diminuir) e **VOLUME +** (aumentar). Comece com o volume baixo e vá subindo aos poucos até ficar confortável.",
+          "**Passo 4 – Desligar.** Para desligar, **segure o botão P apertado** até o visor apagar. Um toque rápido não desliga: é preciso manter o dedo no botão.",
+          "**Dica de fone:** se você quiser estudar sem incomodar ninguém, ligue um fone de ouvido na entrada **PHONES/OUTPUT**, atrás do teclado. Com o fone ligado, o som sai pelo fone.",
+          "**Cuidado:** se for usar o adaptador, não puxe o fio da tomada com o teclado ligado. Desligue primeiro pelo botão P."
+        ],
+        "teclas": [
+          60
+        ],
+        "dedos": {
+          "60": {
+            "dedo": 2,
+            "mao": "direita"
+          }
+        },
+        "exercicioGuiado": [
+          "Confira se o teclado tem pilhas ou se o adaptador está ligado na entrada DC 9.5V.",
+          "Aperte o botão P uma vez e veja o visor acender.",
+          "Aperte VOLUME − algumas vezes para deixar o som baixo.",
+          "Toque a tecla branca destacada e aperte VOLUME + até ouvir bem.",
+          "Segure o botão P até o visor apagar. Pronto: desligado.",
+          "Repita: ligar, ajustar volume, tocar, desligar — três vezes."
+        ],
+        "tempos": {
+          "explicacao": 3,
+          "observacao": 2,
+          "pratica": 4,
+          "exercicio": 3
+        },
+        "desafio": "Ligue o teclado, deixe o volume confortável, toque uma nota e desligue corretamente — sem olhar as instruções.",
+        "criterio": {
+          "tipo": "quiz",
+          "perguntas": [
+            {
+              "pergunta": "Qual botão liga o CT-S300?",
+              "opcoes": [
+                "HOME",
+                "P",
+                "FUNCTION",
+                "▶■"
+              ],
+              "correta": 1
+            },
+            {
+              "pergunta": "Como se desliga o teclado?",
+              "opcoes": [
+                "Toque rápido no P",
+                "Segurar o P apertado até o visor apagar",
+                "Apertar HOME",
+                "Tirar o fio da tomada"
+              ],
+              "correta": 1
+            },
+            {
+              "pergunta": "Onde se liga o adaptador AD-E95100L?",
+              "opcoes": [
+                "Na entrada DC 9.5V",
+                "Na entrada PEDAL",
+                "Na entrada AUDIO IN",
+                "Na entrada USB"
+              ],
+              "correta": 0
+            }
+          ]
+        }
+      },
+      {
+        "id": "m1-a3",
+        "titulo": "Conhecendo os botões",
+        "status": "pronta",
+        "objetivo": "Saber para que serve cada botão e cada entrada do CT-S300.",
+        "vaiAprender": [
+          "Os botões do painel e a função de cada um",
+          "Para que serve o disco",
+          "O que é a roda de pitch bend",
+          "As entradas da parte de trás"
+        ],
+        "explicacao": [
+          "O **painel** é a parte com botões e visor, acima das teclas. O **visor** é a pequena tela que mostra o nome do som, números e mensagens.",
+          "Botões principais:\n- **P**: liga e desliga (segure para desligar).\n- **VOLUME − / +**: diminui e aumenta o som.\n- **HOME**: volta para a tela inicial, onde aparecem os sons. É o seu \"botão de voltar para casa\".\n- **Disco**: um botão redondo que você gira. Na tela de sons, girar o disco troca o som (por exemplo, do 001 STEREO GRAND PIANO para o próximo). Ele também muda números e valores.\n- **3 botões abaixo do visor**: mudam de função conforme a tela. O próprio visor mostra o que cada um faz naquele momento.\n- **▶■**: inicia e para (ritmos e canções).\n- **TEMPO**: ajusta o andamento, ou seja, a velocidade da música.\n- **SUSTAIN**: faz as notas soarem por mais tempo depois de soltar a tecla.\n- **MY SETUP**: guarda e chama de volta as suas configurações favoritas.\n- **FUNCTION**: abre os ajustes do teclado.",
+          "À esquerda das teclas fica a **roda de pitch bend**. \"Pitch\" quer dizer altura do som e \"bend\" quer dizer dobrar. Girando a roda, o som desliza um pouco para cima ou para baixo, como numa guitarra. Ao soltar, ela volta ao meio sozinha.",
+          "Na **parte de trás** ficam as entradas:\n- **DC 9.5V**: adaptador de energia.\n- **PHONES/OUTPUT**: fone de ouvido ou caixa de som.\n- **AUDIO IN**: para ligar um celular e tocar junto com a música dele.\n- **PEDAL**: para um pedal de sustain.\n- **USB**: para ligar no computador ou celular.",
+          "**Importante:** o CT-S300 **não tem** teclado numérico, nem botões separados de \"Tone\", \"Piano/Organ\", \"Metronome\" ou \"Transpose\". Quase tudo é feito com **HOME**, o **disco** e os **3 botões abaixo do visor**."
+        ],
+        "teclas": [],
+        "dedos": {},
+        "exercicioGuiado": [
+          "Ligue o teclado com o botão P.",
+          "Aperte HOME para ir à tela de sons.",
+          "Gire o disco devagar para a direita e veja o nome do som mudar no visor. Toque algumas teclas a cada som.",
+          "Gire o disco de volta até aparecer 001 STEREO GRAND PIANO.",
+          "Mexa a roda de pitch bend enquanto segura uma tecla e escute o som deslizar.",
+          "Olhe atrás do teclado e encontre: DC 9.5V, PHONES/OUTPUT, AUDIO IN, PEDAL e USB."
+        ],
+        "tempos": {
+          "explicacao": 5,
+          "observacao": 3,
+          "pratica": 5,
+          "exercicio": 3
+        },
+        "desafio": "Sem olhar a lição, diga para que servem HOME, o disco, TEMPO e SUSTAIN.",
+        "criterio": {
+          "tipo": "quiz",
+          "perguntas": [
+            {
+              "pergunta": "Na tela de sons, como se troca o som?",
+              "opcoes": [
+                "Digitando o número no teclado numérico",
+                "Girando o disco",
+                "Apertando TEMPO",
+                "Apertando SUSTAIN"
+              ],
+              "correta": 1
+            },
+            {
+              "pergunta": "Qual botão volta para a tela inicial de sons?",
+              "opcoes": [
+                "FUNCTION",
+                "MY SETUP",
+                "HOME",
+                "▶■"
+              ],
+              "correta": 2
+            },
+            {
+              "pergunta": "Onde fica a roda de pitch bend?",
+              "opcoes": [
+                "À esquerda das teclas",
+                "Atrás do teclado",
+                "Embaixo do visor",
+                "À direita das teclas"
+              ],
+              "correta": 0
+            },
+            {
+              "pergunta": "Para que serve o botão TEMPO?",
+              "opcoes": [
+                "Desligar o teclado",
+                "Ajustar a velocidade da música",
+                "Trocar o som",
+                "Gravar"
+              ],
+              "correta": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "m1-a4",
+        "titulo": "Conhecendo as teclas brancas e pretas",
+        "status": "pronta",
+        "objetivo": "Entender a diferença entre teclas brancas e pretas e como elas se organizam.",
+        "vaiAprender": [
+          "Por que existem teclas brancas e pretas",
+          "O que é um semitom",
+          "Como as teclas pretas ficam entre as brancas"
+        ],
+        "explicacao": [
+          "As **teclas brancas** são as mais largas e compridas. As **teclas pretas** são mais finas, mais curtas e ficam um pouco mais altas, \"em cima\" e entre as brancas.",
+          "Cada tecla faz um som diferente. Indo da esquerda para a direita, **cada tecla seguinte (branca ou preta) faz um som um pouquinho mais agudo**. Essa menor distância entre dois sons vizinhos se chama **semitom** (meio tom).",
+          "Por isso, a tecla preta tem um som que fica **entre** as duas brancas vizinhas. Por exemplo: a preta logo à direita do Dó tem um som entre o Dó e o Ré.",
+          "Perceba que **nem toda tecla branca tem uma preta ao lado**. Em alguns lugares duas brancas ficam juntinhas, sem preta no meio. É exatamente isso que vai nos ajudar a nos localizar no teclado na próxima aula.",
+          "Para tocar: use a **ponta do dedo**, aperte a tecla até o fundo, com calma, e solte. Nas teclas pretas, toque um pouco mais para dentro (mais longe de você), porque elas são mais curtas."
+        ],
+        "teclas": [
+          60,
+          61,
+          62
+        ],
+        "dedos": {
+          "60": {
+            "dedo": 2,
+            "mao": "direita"
+          },
+          "61": {
+            "dedo": 2,
+            "mao": "direita"
+          },
+          "62": {
+            "dedo": 2,
+            "mao": "direita"
+          }
+        },
+        "exercicioGuiado": [
+          "No seu CT-S300, toque uma tecla branca qualquer com o dedo indicador.",
+          "Agora toque a tecla preta logo à direita dela. Ouça: o som ficou um pouquinho mais agudo.",
+          "Toque a branca seguinte. Mais um pouquinho agudo.",
+          "Repita devagar: branca, preta, branca — ouvindo cada som.",
+          "Procure no teclado um lugar onde duas brancas ficam juntas, sem preta entre elas."
+        ],
+        "tempos": {
+          "explicacao": 3,
+          "observacao": 2,
+          "pratica": 4,
+          "exercicio": 3
+        },
+        "desafio": "No teclado da tela, toque em ordem: a branca destacada, a preta à direita dela e a próxima branca.",
+        "criterio": {
+          "tipo": "sequencia",
+          "notas": [
+            60,
+            61,
+            62
+          ],
+          "instrucao": "Toque branca → preta → branca, nas teclas destacadas."
+        }
+      },
+      {
+        "id": "m1-a5",
+        "titulo": "Identificando grupos de duas e três teclas pretas",
+        "status": "pronta",
+        "objetivo": "Usar os grupos de teclas pretas como \"mapa\" para se localizar no teclado.",
+        "vaiAprender": [
+          "O que são os grupos de 2 e de 3 teclas pretas",
+          "Como esse padrão se repete em todo o teclado",
+          "Quantos grupos existem no CT-S300"
+        ],
+        "explicacao": [
+          "Olhe só para as teclas pretas. Elas não estão espalhadas de qualquer jeito: formam **grupos de 2** e **grupos de 3**, separados por um espaço onde há duas brancas juntas.",
+          "O desenho é sempre o mesmo: **grupo de 2, grupo de 3, grupo de 2, grupo de 3...** do começo ao fim do teclado.",
+          "No CT-S300, contando da esquerda, o primeiro grupo é de **2 pretas**. O teclado tem **5 grupos de 2** e **5 grupos de 3** (5×2 + 5×3 = 25 teclas pretas).",
+          "Por que isso é importante? Porque as teclas brancas são todas iguais e fica difícil saber qual é qual. Os grupos de pretas funcionam como **placas de rua**: olhando para eles você sabe onde está cada nota. Na próxima aula você vai ver que o **Dó fica sempre logo à esquerda de um grupo de 2 pretas**."
+        ],
+        "teclas": [
+          61,
+          63,
+          66,
+          68,
+          70
+        ],
+        "dedos": {
+          "61": {
+            "dedo": 2,
+            "mao": "direita"
+          },
+          "63": {
+            "dedo": 3,
+            "mao": "direita"
+          },
+          "66": {
+            "dedo": 2,
+            "mao": "direita"
+          },
+          "68": {
+            "dedo": 3,
+            "mao": "direita"
+          },
+          "70": {
+            "dedo": 4,
+            "mao": "direita"
+          }
+        },
+        "exercicioGuiado": [
+          "No seu teclado, encontre o primeiro grupo de 2 pretas na esquerda. Toque as duas com os dedos 2 (indicador) e 3 (médio) juntos.",
+          "Vá para a direita e encontre o grupo de 3. Toque as três com os dedos 2, 3 e 4 juntos.",
+          "Continue até o fim do teclado, alternando: grupo de 2, grupo de 3. Conte quantos de cada você encontra.",
+          "Feche os olhos e tente sentir com os dedos onde há 2 e onde há 3 pretas."
+        ],
+        "tempos": {
+          "explicacao": 3,
+          "observacao": 2,
+          "pratica": 5,
+          "exercicio": 3
+        },
+        "desafio": "Toque, um por um, o grupo de 2 pretas e depois o grupo de 3 pretas destacados.",
+        "criterio": {
+          "tipo": "sequencia",
+          "notas": [
+            61,
+            63,
+            66,
+            68,
+            70
+          ],
+          "instrucao": "Toque as 2 pretas do grupo de 2 e depois as 3 pretas do grupo de 3, da esquerda para a direita."
+        }
+      },
+      {
+        "id": "m1-a6",
+        "titulo": "Conhecendo as sete notas musicais",
+        "status": "pronta",
+        "objetivo": "Aprender o nome das sete notas e onde cada uma fica nas teclas brancas.",
+        "vaiAprender": [
+          "Os nomes das sete notas: Dó, Ré, Mi, Fá, Sol, Lá, Si",
+          "As letras usadas para as notas (cifras): C, D, E, F, G, A, B",
+          "Como encontrar cada nota usando os grupos de pretas"
+        ],
+        "explicacao": [
+          "A música usa **sete notas**: **Dó, Ré, Mi, Fá, Sol, Lá, Si**. Depois do Si, a sequência recomeça no Dó, mais agudo.",
+          "Muitas vezes as notas são escritas com letras. Isso se chama **cifra**:\n- Dó = **C**\n- Ré = **D**\n- Mi = **E**\n- Fá = **F**\n- Sol = **G**\n- Lá = **A**\n- Si = **B**\nVale a pena decorar, porque o visor do teclado, revistas e sites de música usam essas letras.",
+          "Onde ficam (nas teclas brancas):\n- **Dó**: logo à esquerda do grupo de **2** pretas.\n- **Ré**: entre as 2 pretas.\n- **Mi**: logo à direita do grupo de 2 pretas.\n- **Fá**: logo à esquerda do grupo de **3** pretas.\n- **Sol** e **Lá**: entre as pretas do grupo de 3.\n- **Si**: logo à direita do grupo de 3 pretas.",
+          "Nesta aula ainda não se preocupe com qual dedo usar: toque com o **indicador** (dedo 2). Os números dos dedos vêm no Módulo 2."
+        ],
+        "teclas": [
+          60,
+          62,
+          64,
+          65,
+          67,
+          69,
+          71
+        ],
+        "dedos": {
+          "60": {
+            "dedo": 2,
+            "mao": "direita"
+          },
+          "62": {
+            "dedo": 2,
+            "mao": "direita"
+          },
+          "64": {
+            "dedo": 2,
+            "mao": "direita"
+          },
+          "65": {
+            "dedo": 2,
+            "mao": "direita"
+          },
+          "67": {
+            "dedo": 2,
+            "mao": "direita"
+          },
+          "69": {
+            "dedo": 2,
+            "mao": "direita"
+          },
+          "71": {
+            "dedo": 2,
+            "mao": "direita"
+          }
+        },
+        "exercicioGuiado": [
+          "Encontre um grupo de 2 pretas no meio do teclado. A branca à esquerda dele é o Dó. Toque e diga \"Dó\".",
+          "Vá subindo pelas brancas dizendo o nome: Dó, Ré, Mi, Fá, Sol, Lá, Si.",
+          "Depois do Si vem outro Dó. Toque e perceba que é a \"mesma\" nota, só que mais aguda.",
+          "Agora desça dizendo: Si, Lá, Sol, Fá, Mi, Ré, Dó.",
+          "Repita trocando os nomes pelas letras: C, D, E, F, G, A, B."
+        ],
+        "tempos": {
+          "explicacao": 4,
+          "observacao": 2,
+          "pratica": 5,
+          "exercicio": 4
+        },
+        "desafio": "Toque as sete notas em ordem, de Dó até Si, nas teclas destacadas.",
+        "criterio": {
+          "tipo": "sequencia",
+          "notas": [
+            60,
+            62,
+            64,
+            65,
+            67,
+            69,
+            71
+          ],
+          "instrucao": "Toque Dó, Ré, Mi, Fá, Sol, Lá, Si."
+        }
+      },
+      {
+        "id": "m1-a7",
+        "titulo": "Encontrando o Dó central",
+        "status": "pronta",
+        "objetivo": "Encontrar rapidamente o Dó central (Dó 4) no CT-S300.",
+        "vaiAprender": [
+          "O que é o Dó central",
+          "Quantos Dós existem no CT-S300",
+          "Como achar o Dó central em segundos"
+        ],
+        "explicacao": [
+          "O **Dó central** é o Dó que fica perto do meio do teclado. Ele é o ponto de partida de quase todas as aulas e músicas para iniciantes. Na escrita internacional ele se chama **C4** (Dó 4).",
+          "O CT-S300 tem **6 Dós**: C2, C3, C4, C5, C6 e C7. O primeiro Dó é a tecla mais à esquerda do teclado.",
+          "**Como achar:** contando da esquerda, o Dó central é o **terceiro Dó**. Ele fica logo à esquerda do **terceiro grupo de 2 pretas**.",
+          "Repare que ele fica **um pouco à esquerda do centro** do teclado, não exatamente no meio. Isso é normal em teclados de 61 teclas.",
+          "Dica: sente-se de frente para o Dó central. Assim as duas mãos alcançam bem as notas graves e agudas."
+        ],
+        "teclas": [
+          60
+        ],
+        "dedos": {
+          "60": {
+            "dedo": 1,
+            "mao": "direita"
+          }
+        },
+        "exercicioGuiado": [
+          "No seu CT-S300, comece pela tecla mais à esquerda: ela é um Dó (C2).",
+          "Conte os grupos de 2 pretas da esquerda para a direita: 1º, 2º, 3º.",
+          "A branca logo à esquerda do 3º grupo de 2 pretas é o Dó central. Toque com o polegar da mão direita.",
+          "Tire a mão, olhe para outro lugar e encontre o Dó central de novo. Repita 5 vezes, cada vez mais rápido."
+        ],
+        "tempos": {
+          "explicacao": 3,
+          "observacao": 2,
+          "pratica": 4,
+          "exercicio": 3
+        },
+        "desafio": "Toque o Dó central no teclado da tela.",
+        "criterio": {
+          "tipo": "nota",
+          "nota": 60,
+          "instrucao": "Encontre e toque o Dó central (C4)."
+        }
+      },
+      {
+        "id": "m1-a8",
+        "titulo": "Identificando todas as notas no teclado",
+        "status": "pronta",
+        "objetivo": "Saber o nome de qualquer tecla do CT-S300, brancas e pretas.",
+        "vaiAprender": [
+          "O que é uma oitava",
+          "Como as sete notas se repetem por todo o teclado",
+          "Os nomes das teclas pretas: sustenido (#) e bemol (b)"
+        ],
+        "explicacao": [
+          "As sete notas se repetem várias vezes no teclado. A distância de um Dó até o próximo Dó se chama **oitava** (porque, contando os dois Dós, são 8 teclas brancas).",
+          "No CT-S300 há 5 oitavas completas: do **C2** ao **C7**. Todas usam a mesma ordem: Dó, Ré, Mi, Fá, Sol, Lá, Si. Só muda a altura: mais à esquerda, mais grave; mais à direita, mais agudo.",
+          "As **teclas pretas** recebem o nome da branca vizinha com um sinal:\n- **Sustenido (#)**: quer dizer \"um semitom acima\". A preta à direita do Dó é o **Dó#** (Dó sustenido).\n- **Bemol (b)**: quer dizer \"um semitom abaixo\". A mesma tecla também pode se chamar **Réb** (Ré bemol), porque fica logo abaixo do Ré.\nOu seja: uma tecla preta tem dois nomes, e os dois estão certos.",
+          "As cinco pretas de cada oitava são: **Dó# (Réb), Ré# (Mib), Fá# (Solb), Sol# (Láb), Lá# (Sib)**.",
+          "Repare que entre **Mi e Fá** e entre **Si e Dó** não há tecla preta. Ali as brancas ficam vizinhas."
+        ],
+        "teclas": [
+          36,
+          48,
+          60,
+          72,
+          84,
+          96
+        ],
+        "dedos": {
+          "36": {
+            "dedo": 2,
+            "mao": "direita"
+          },
+          "48": {
+            "dedo": 2,
+            "mao": "direita"
+          },
+          "60": {
+            "dedo": 2,
+            "mao": "direita"
+          },
+          "72": {
+            "dedo": 2,
+            "mao": "direita"
+          },
+          "84": {
+            "dedo": 2,
+            "mao": "direita"
+          },
+          "96": {
+            "dedo": 2,
+            "mao": "direita"
+          }
+        },
+        "exercicioGuiado": [
+          "Toque todos os Dós do teclado, da esquerda para a direita: C2, C3, C4, C5, C6, C7.",
+          "Agora toque todos os Fás (à esquerda de cada grupo de 3 pretas).",
+          "Escolha uma oitava e diga o nome de cada tecla branca e preta: Dó, Dó#, Ré, Ré#, Mi, Fá, Fá#, Sol, Sol#, Lá, Lá#, Si.",
+          "Use o teclado da tela: ao tocar, o nome da nota aparece na tecla. Confira se você acertou."
+        ],
+        "tempos": {
+          "explicacao": 4,
+          "observacao": 2,
+          "pratica": 5,
+          "exercicio": 4
+        },
+        "desafio": "Toque os 6 Dós do teclado, do mais grave ao mais agudo.",
+        "criterio": {
+          "tipo": "sequencia",
+          "notas": [
+            36,
+            48,
+            60,
+            72,
+            84,
+            96
+          ],
+          "instrucao": "Toque todos os Dós, da esquerda para a direita."
+        }
+      },
+      {
+        "id": "m1-a9",
+        "titulo": "Primeiro exercício musical",
+        "status": "pronta",
+        "objetivo": "Tocar sua primeira melodia completa: \"Dó, Ré, Mi, Fá\" (cantiga tradicional).",
+        "vaiAprender": [
+          "Como juntar notas para formar uma melodia",
+          "A posição de Dó da mão direita (cinco dedos em cinco notas)",
+          "Tocar devagar e com regularidade"
+        ],
+        "explicacao": [
+          "Uma **melodia** é uma sequência de notas que forma a \"parte cantada\" de uma música. Vamos tocar a cantiga tradicional \"Dó, Ré, Mi, Fá\", muito usada por quem está começando.",
+          "**Posição da mão direita:** coloque o **polegar no Dó central**, o indicador no Ré, o médio no Mi, o anelar no Fá e o mínimo no Sol. Cada dedo fica sobre uma tecla branca e **não sai do lugar**. (No Módulo 2 você vai aprender os números dos dedos com calma.)",
+          "A melodia:\n- **Dó Ré Mi Fá, Fá Fá**\n- **Dó Ré Dó Ré, Ré Ré**\n- **Dó Sol Fá Mi, Mi Mi**\n- **Dó Ré Mi Fá, Fá Fá**",
+          "Toque **devagar** e com o mesmo espaço de tempo entre as notas, como os passos de quem caminha calmamente. Velocidade vem depois; primeiro vem a certeza."
+        ],
+        "teclas": [
+          60,
+          62,
+          64,
+          65,
+          67
+        ],
+        "dedos": {
+          "60": {
+            "dedo": 1,
+            "mao": "direita"
+          },
+          "62": {
+            "dedo": 2,
+            "mao": "direita"
+          },
+          "64": {
+            "dedo": 3,
+            "mao": "direita"
+          },
+          "65": {
+            "dedo": 4,
+            "mao": "direita"
+          },
+          "67": {
+            "dedo": 5,
+            "mao": "direita"
+          }
+        },
+        "exercicioGuiado": [
+          "Ligue o teclado e deixe no som 001 STEREO GRAND PIANO (aperte HOME e gire o disco, se precisar).",
+          "Coloque a mão direita na posição de Dó: polegar no Dó central.",
+          "Toque só a primeira linha (Dó Ré Mi Fá, Fá Fá) 3 vezes.",
+          "Toque a segunda linha 3 vezes. Depois a terceira (atenção: do Dó você vai para o Sol, com o dedo mínimo).",
+          "Junte as quatro linhas devagar, cantando o nome das notas."
+        ],
+        "tempos": {
+          "explicacao": 3,
+          "observacao": 3,
+          "pratica": 7,
+          "exercicio": 5
+        },
+        "desafio": "Toque a melodia inteira no teclado da tela, sem pressa.",
+        "criterio": {
+          "tipo": "sequencia",
+          "notas": [
+            60,
+            62,
+            64,
+            65,
+            65,
+            65,
+            60,
+            62,
+            60,
+            62,
+            62,
+            62,
+            60,
+            67,
+            65,
+            64,
+            64,
+            64,
+            60,
+            62,
+            64,
+            65,
+            65,
+            65
+          ],
+          "instrucao": "Toque a melodia completa: Dó Ré Mi Fá Fá Fá / Dó Ré Dó Ré Ré Ré / Dó Sol Fá Mi Mi Mi / Dó Ré Mi Fá Fá Fá."
+        }
+      }
+    ]
+  },
+  {
+    "id": "m2",
+    "numero": 2,
+    "titulo": "Posicionamento das mãos",
+    "descricao": "Dedos, números, postura e os primeiros exercícios técnicos.",
+    "aulas": [
+      {
+        "id": "m2-a1",
+        "titulo": "Conhecendo os dedos",
+        "status": "pronta",
+        "objetivo": "Conhecer o nome e o papel de cada dedo ao tocar teclado.",
+        "vaiAprender": [
+          "O nome dos cinco dedos",
+          "Qual parte do dedo encosta na tecla",
+          "Cuidados com unhas e mãos"
+        ],
+        "explicacao": [
+          "Cada mão tem cinco dedos e todos tocam: **polegar**, **indicador**, **médio**, **anelar** e **mínimo** (o \"mindinho\").",
+          "O **médio** é o mais comprido e o mais forte. O **anelar** e o **mínimo** são os mais fracos — por isso vamos treiná-los bastante. O **polegar** é curto e toca com a **lateral** da ponta, não com a unha.",
+          "Os outros dedos tocam com a **ponta** (a parte macia logo antes da unha). Por isso é bom manter as **unhas curtas**: unha comprida bate na tecla, escorrega e faz barulho.",
+          "Antes de estudar, lave e seque as mãos e faça um aquecimento: abra e feche as mãos devagar 10 vezes. Se sentir dor, pare e descanse."
+        ],
+        "teclas": [],
+        "dedos": {},
+        "exercicioGuiado": [
+          "Olhe a sua mão direita e diga o nome de cada dedo, do polegar ao mínimo.",
+          "Faça o mesmo com a mão esquerda.",
+          "Encoste a ponta de cada dedo na mesa, um de cada vez, sem mexer os outros.",
+          "Abra e feche as mãos devagar 10 vezes para aquecer."
+        ],
+        "tempos": {
+          "explicacao": 3,
+          "observacao": 2,
+          "pratica": 3,
+          "exercicio": 2
+        },
+        "desafio": "Responda às perguntas sobre os dedos.",
+        "criterio": {
+          "tipo": "quiz",
+          "perguntas": [
+            {
+              "pergunta": "Qual é o dedo mais comprido e forte?",
+              "opcoes": [
+                "Polegar",
+                "Médio",
+                "Anelar",
+                "Mínimo"
+              ],
+              "correta": 1
+            },
+            {
+              "pergunta": "Com que parte o polegar toca a tecla?",
+              "opcoes": [
+                "Com a unha",
+                "Com a lateral da ponta",
+                "Com o meio do dedo",
+                "Com a palma"
+              ],
+              "correta": 1
+            },
+            {
+              "pergunta": "Por que as unhas devem ficar curtas?",
+              "opcoes": [
+                "Para ficar bonito",
+                "Porque unha comprida bate na tecla e escorrega",
+                "Porque o teclado exige",
+                "Não precisa"
+              ],
+              "correta": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "m2-a2",
+        "titulo": "Numeração dos dedos da mão direita",
+        "status": "pronta",
+        "objetivo": "Saber o número de cada dedo da mão direita e usar na posição de Dó.",
+        "vaiAprender": [
+          "Os números de 1 a 5 dos dedos",
+          "A posição de Dó da mão direita",
+          "Tocar cinco notas com cinco dedos"
+        ],
+        "explicacao": [
+          "Nas partituras e nas aulas, os dedos são indicados por **números**. Isso se chama **dedilhado**: o número diz qual dedo usar em cada nota.",
+          "Mão direita:\n- **1** = polegar\n- **2** = indicador\n- **3** = médio\n- **4** = anelar\n- **5** = mínimo",
+          "**Posição de Dó (mão direita):** dedo **1 no Dó central**, **2 no Ré**, **3 no Mi**, **4 no Fá** e **5 no Sol**. Os dedos ficam encostados de leve nas teclas, cada um sobre uma tecla branca, prontos para tocar.",
+          "No teclado da tela, o número em cada tecla destacada mostra o dedo que deve tocar."
+        ],
+        "teclas": [
+          60,
+          62,
+          64,
+          65,
+          67
+        ],
+        "dedos": {
+          "60": {
+            "dedo": 1,
+            "mao": "direita"
+          },
+          "62": {
+            "dedo": 2,
+            "mao": "direita"
+          },
+          "64": {
+            "dedo": 3,
+            "mao": "direita"
+          },
+          "65": {
+            "dedo": 4,
+            "mao": "direita"
+          },
+          "67": {
+            "dedo": 5,
+            "mao": "direita"
+          }
+        },
+        "exercicioGuiado": [
+          "Encontre o Dó central e coloque o polegar (1) sobre ele.",
+          "Apoie os dedos 2, 3, 4 e 5 nas brancas seguintes: Ré, Mi, Fá, Sol.",
+          "Toque cada nota dizendo o número: 1, 2, 3, 4, 5.",
+          "Volte: 5, 4, 3, 2, 1. Os dedos que não estão tocando ficam parados sobre as teclas.",
+          "Repita 5 vezes, devagar."
+        ],
+        "tempos": {
+          "explicacao": 3,
+          "observacao": 2,
+          "pratica": 5,
+          "exercicio": 4
+        },
+        "desafio": "Toque Dó, Ré, Mi, Fá, Sol usando os dedos 1, 2, 3, 4, 5.",
+        "criterio": {
+          "tipo": "sequencia",
+          "notas": [
+            60,
+            62,
+            64,
+            65,
+            67
+          ],
+          "instrucao": "Dedos 1-2-3-4-5 da mão direita: Dó Ré Mi Fá Sol."
+        }
+      },
+      {
+        "id": "m2-a3",
+        "titulo": "Numeração dos dedos da mão esquerda",
+        "status": "pronta",
+        "objetivo": "Saber o número de cada dedo da mão esquerda e usar na posição de Dó grave.",
+        "vaiAprender": [
+          "A numeração da mão esquerda",
+          "Por que na mão esquerda o 5 toca a nota mais grave",
+          "A posição de Dó da mão esquerda"
+        ],
+        "explicacao": [
+          "A regra é a mesma nas duas mãos: **polegar = 1** e **mínimo = 5**.\n- **1** = polegar\n- **2** = indicador\n- **3** = médio\n- **4** = anelar\n- **5** = mínimo",
+          "Como a mão esquerda é o \"espelho\" da direita, o **mínimo (5)** fica do lado esquerdo (graves) e o **polegar (1)** fica do lado direito.",
+          "**Posição de Dó (mão esquerda):** encontre o **Dó 3 (C3)**, que é o Dó logo à esquerda do Dó central. Coloque o **5 no Dó**, **4 no Ré**, **3 no Mi**, **2 no Fá** e **1 no Sol**.",
+          "Tocando 5-4-3-2-1, a mão esquerda sobe de Dó até Sol, assim como a direita fez com 1-2-3-4-5."
+        ],
+        "teclas": [
+          48,
+          50,
+          52,
+          53,
+          55
+        ],
+        "dedos": {
+          "48": {
+            "dedo": 5,
+            "mao": "esquerda"
+          },
+          "50": {
+            "dedo": 4,
+            "mao": "esquerda"
+          },
+          "52": {
+            "dedo": 3,
+            "mao": "esquerda"
+          },
+          "53": {
+            "dedo": 2,
+            "mao": "esquerda"
+          },
+          "55": {
+            "dedo": 1,
+            "mao": "esquerda"
+          }
+        },
+        "exercicioGuiado": [
+          "Encontre o Dó central e desça até o Dó anterior (C3).",
+          "Coloque o mínimo da mão esquerda (5) sobre ele e os outros dedos nas brancas seguintes.",
+          "Toque subindo dizendo os números: 5, 4, 3, 2, 1.",
+          "Desça: 1, 2, 3, 4, 5.",
+          "Repita 5 vezes. Se o dedo 4 estiver \"preguiçoso\", toque só 5-4-5-4 algumas vezes."
+        ],
+        "tempos": {
+          "explicacao": 3,
+          "observacao": 2,
+          "pratica": 5,
+          "exercicio": 4
+        },
+        "desafio": "Com a mão esquerda, suba de Dó até Sol e desça de volta.",
+        "criterio": {
+          "tipo": "sequencia",
+          "notas": [
+            48,
+            50,
+            52,
+            53,
+            55,
+            53,
+            52,
+            50,
+            48
+          ],
+          "instrucao": "Mão esquerda: 5-4-3-2-1-2-3-4-5 (Dó Ré Mi Fá Sol Fá Mi Ré Dó)."
+        }
+      },
+      {
+        "id": "m2-a4",
+        "titulo": "Posição correta das mãos",
+        "status": "pronta",
+        "objetivo": "Deixar a mão no formato certo para tocar com conforto e sem dor.",
+        "vaiAprender": [
+          "O formato arredondado da mão",
+          "A altura certa do punho",
+          "Como manter a mão relaxada"
+        ],
+        "explicacao": [
+          "Imagine que você está **segurando uma laranja** ou uma bola pequena: a mão fica **arredondada** e os dedos **curvados**. É esse o formato para tocar.",
+          "Os dedos tocam com a **ponta**, e não deitados. Dedos esticados ficam fracos e lentos.",
+          "O **punho** (pulso) fica **na mesma linha** do antebraço e da mão: nem caído abaixo do teclado, nem levantado para cima.",
+          "Coloque os dedos na **parte larga das teclas brancas**, perto da borda. Assim, quando precisar de uma tecla preta, basta avançar um pouco a mão.",
+          "**Ombros e mãos soltos.** Use só a força necessária para afundar a tecla. Se a mão cansar ou ficar dura, pare, sacuda as mãos e recomece."
+        ],
+        "teclas": [
+          60,
+          62,
+          64,
+          65,
+          67
+        ],
+        "dedos": {
+          "60": {
+            "dedo": 1,
+            "mao": "direita"
+          },
+          "62": {
+            "dedo": 2,
+            "mao": "direita"
+          },
+          "64": {
+            "dedo": 3,
+            "mao": "direita"
+          },
+          "65": {
+            "dedo": 4,
+            "mao": "direita"
+          },
+          "67": {
+            "dedo": 5,
+            "mao": "direita"
+          }
+        },
+        "exercicioGuiado": [
+          "Pegue uma laranja (ou bola) e sinta o formato da mão. Solte e mantenha esse formato.",
+          "Leve a mão assim até a posição de Dó (polegar no Dó central).",
+          "Toque 1-2-3-4-5 devagar, olhando se os dedos continuam curvados.",
+          "Olhe o punho de lado: ele está reto? Corrija se precisar.",
+          "Repita com a mão esquerda na posição de Dó grave."
+        ],
+        "tempos": {
+          "explicacao": 3,
+          "observacao": 3,
+          "pratica": 5,
+          "exercicio": 3
+        },
+        "desafio": "Toque Dó-Ré-Mi-Fá-Sol com a mão arredondada, sem o punho cair, 5 vezes seguidas. Peça para alguém observar ou filme sua mão.",
+        "criterio": {
+          "tipo": "manual",
+          "instrucao": "Marque como concluída quando conseguir tocar com a mão arredondada e o punho reto 5 vezes seguidas."
+        }
+      },
+      {
+        "id": "m2-a5",
+        "titulo": "Posição correta do corpo",
+        "status": "pronta",
+        "objetivo": "Sentar e posicionar o corpo para tocar por mais tempo, sem dor.",
+        "vaiAprender": [
+          "Onde colocar o teclado",
+          "Como sentar",
+          "A altura e a distância certas"
+        ],
+        "explicacao": [
+          "Coloque o CT-S300 sobre uma **mesa firme ou um suporte** para teclado. Evite apoiar no colo ou na cama: o teclado balança e a postura fica ruim.",
+          "**Como sentar:** use um banco ou cadeira firme, sem braços. Sente na **parte da frente do assento**, com a **coluna reta** e os **dois pés apoiados no chão**.",
+          "**Altura:** os **antebraços** (do cotovelo até a mão) devem ficar mais ou menos **paralelos ao chão**, com os cotovelos na altura das teclas ou um pouquinho acima. Se ficar baixo demais, coloque uma almofada firme no assento.",
+          "**Distância:** sente a uma distância em que os cotovelos fiquem um pouco à frente do corpo, sem precisar esticar os braços nem apertá-los contra a barriga.",
+          "**Centro:** fique de frente para o **Dó central**, como aprendeu no Módulo 1.",
+          "Faça pausas: a cada 20–30 minutos, levante, alongue e descanse os olhos."
+        ],
+        "teclas": [
+          60
+        ],
+        "dedos": {
+          "60": {
+            "dedo": 1,
+            "mao": "direita"
+          }
+        },
+        "exercicioGuiado": [
+          "Arrume o lugar: teclado firme na mesa ou suporte, banco na frente.",
+          "Sente-se de frente para o Dó central, na parte da frente do assento, pés no chão.",
+          "Coloque as mãos na posição de Dó e confira se os antebraços estão paralelos ao chão.",
+          "Ajuste a altura ou a distância até ficar confortável.",
+          "Toque 1-2-3-4-5 com a mão direita e sinta se os ombros estão soltos."
+        ],
+        "tempos": {
+          "explicacao": 3,
+          "observacao": 2,
+          "pratica": 4,
+          "exercicio": 2
+        },
+        "desafio": "Monte seu lugar de estudo e toque por 3 minutos mantendo coluna reta, pés no chão e antebraços paralelos ao chão.",
+        "criterio": {
+          "tipo": "manual",
+          "instrucao": "Marque como concluída quando o seu lugar de estudo estiver montado e você conseguir tocar 3 minutos na postura correta."
+        }
+      },
+      {
+        "id": "m2-a6",
+        "titulo": "Exercícios com cinco dedos",
+        "status": "pronta",
+        "objetivo": "Fortalecer os cinco dedos subindo e descendo na posição de Dó.",
+        "vaiAprender": [
+          "O exercício de cinco dedos (subir e descer)",
+          "Tocar com som igual em todos os dedos",
+          "Fazer o mesmo com a mão esquerda"
+        ],
+        "explicacao": [
+          "Este é um dos exercícios mais importantes do teclado: **subir e descer cinco notas** com cinco dedos, sem tirar a mão do lugar.",
+          "Mão direita: **1-2-3-4-5-4-3-2-1** (Dó Ré Mi Fá Sol Fá Mi Ré Dó).\nMão esquerda: **5-4-3-2-1-2-3-4-5** (as mesmas notas, uma oitava abaixo).",
+          "O objetivo é que **todas as notas soem com o mesmo volume** e com o **mesmo espaço de tempo**. Os dedos 4 e 5 costumam sair mais fracos: preste atenção neles.",
+          "Conte em voz alta \"1, 2, 3, 4...\" num ritmo calmo, uma nota em cada número. Isso já prepara você para o Módulo 3, sobre ritmo."
+        ],
+        "teclas": [
+          60,
+          62,
+          64,
+          65,
+          67
+        ],
+        "dedos": {
+          "60": {
+            "dedo": 1,
+            "mao": "direita"
+          },
+          "62": {
+            "dedo": 2,
+            "mao": "direita"
+          },
+          "64": {
+            "dedo": 3,
+            "mao": "direita"
+          },
+          "65": {
+            "dedo": 4,
+            "mao": "direita"
+          },
+          "67": {
+            "dedo": 5,
+            "mao": "direita"
+          }
+        },
+        "exercicioGuiado": [
+          "Mão direita na posição de Dó. Toque 1-2-3-4-5-4-3-2-1 devagar, 3 vezes.",
+          "Ouça: alguma nota saiu mais fraca? Repita só aquela parte.",
+          "Mão esquerda na posição de Dó grave. Toque 5-4-3-2-1-2-3-4-5, 3 vezes.",
+          "Volte à mão direita e tente tocar um pouco mais rápido, sem perder a regularidade."
+        ],
+        "tempos": {
+          "explicacao": 2,
+          "observacao": 2,
+          "pratica": 7,
+          "exercicio": 4
+        },
+        "desafio": "Com a mão direita, suba e desça as cinco notas sem errar.",
+        "criterio": {
+          "tipo": "sequencia",
+          "notas": [
+            60,
+            62,
+            64,
+            65,
+            67,
+            65,
+            64,
+            62,
+            60
+          ],
+          "instrucao": "Mão direita: 1-2-3-4-5-4-3-2-1."
+        }
+      },
+      {
+        "id": "m2-a7",
+        "titulo": "Independência dos dedos",
+        "status": "pronta",
+        "objetivo": "Fazer cada dedo se mover sozinho, sem arrastar os vizinhos.",
+        "vaiAprender": [
+          "O que é independência dos dedos",
+          "O exercício de terças (pular uma tecla)",
+          "Como treinar os dedos 3, 4 e 5"
+        ],
+        "explicacao": [
+          "**Independência** é conseguir mexer um dedo sem que os outros se mexam junto. No começo, o anelar (4) costuma \"puxar\" o médio e o mínimo — isso é normal e melhora com treino.",
+          "Neste exercício você vai **pular uma tecla**: tocar o dedo 1 e depois o 3, o 2 e depois o 4, o 3 e depois o 5. Esse salto de uma tecla branca se chama **terça**.",
+          "Sequência na mão direita (posição de Dó): **1-3, 2-4, 3-5** → Dó-Mi, Ré-Fá, Mi-Sol.",
+          "Mantenha os dedos que não tocam **encostados de leve** nas teclas. Se um dedo levantar sem querer, toque mais devagar."
+        ],
+        "teclas": [
+          60,
+          62,
+          64,
+          65,
+          67
+        ],
+        "dedos": {
+          "60": {
+            "dedo": 1,
+            "mao": "direita"
+          },
+          "62": {
+            "dedo": 2,
+            "mao": "direita"
+          },
+          "64": {
+            "dedo": 3,
+            "mao": "direita"
+          },
+          "65": {
+            "dedo": 4,
+            "mao": "direita"
+          },
+          "67": {
+            "dedo": 5,
+            "mao": "direita"
+          }
+        },
+        "exercicioGuiado": [
+          "Mão direita na posição de Dó.",
+          "Toque 1-3 (Dó-Mi) quatro vezes, devagar.",
+          "Toque 2-4 (Ré-Fá) quatro vezes. Atenção ao dedo 4.",
+          "Toque 3-5 (Mi-Sol) quatro vezes.",
+          "Junte tudo: 1-3, 2-4, 3-5. Depois faça o mesmo com a mão esquerda (5-3, 4-2, 3-1)."
+        ],
+        "tempos": {
+          "explicacao": 2,
+          "observacao": 2,
+          "pratica": 7,
+          "exercicio": 4
+        },
+        "desafio": "Toque a sequência de terças 1-3, 2-4, 3-5 na mão direita.",
+        "criterio": {
+          "tipo": "sequencia",
+          "notas": [
+            60,
+            64,
+            62,
+            65,
+            64,
+            67
+          ],
+          "instrucao": "Dó-Mi, Ré-Fá, Mi-Sol (dedos 1-3, 2-4, 3-5)."
+        }
+      },
+      {
+        "id": "m2-a8",
+        "titulo": "Exercícios de coordenação",
+        "status": "pronta",
+        "objetivo": "Começar a usar as duas mãos ao mesmo tempo.",
+        "vaiAprender": [
+          "O que é coordenação entre as mãos",
+          "Tocar duas notas juntas, uma em cada mão",
+          "Subir as duas mãos ao mesmo tempo"
+        ],
+        "explicacao": [
+          "**Coordenação** é fazer as duas mãos trabalharem juntas. É o primeiro passo para tocar melodia e acompanhamento ao mesmo tempo (Módulo 6).",
+          "Posição: **mão esquerda** com o **5 no Dó 3** (C3) e **mão direita** com o **1 no Dó central** (C4). As duas mãos ficam em posição de Dó, uma oitava de distância.",
+          "Primeiro, toque os **dois Dós juntos**: dedo 5 da esquerda e dedo 1 da direita, ao mesmo tempo, como se fosse uma só batida.",
+          "Depois suba as duas mãos juntas: Dó-Dó, Ré-Ré, Mi-Mi, Fá-Fá, Sol-Sol. Repare que os números são diferentes em cada mão: a esquerda faz **5-4-3-2-1** e a direita faz **1-2-3-4-5**. Isso exige atenção — vá bem devagar.",
+          "No teclado da tela, para tocar duas teclas juntas use dois dedos na tela (no celular) ou toque as duas em sequência rápida."
+        ],
+        "teclas": [
+          48,
+          60
+        ],
+        "dedos": {
+          "48": {
+            "dedo": 5,
+            "mao": "esquerda"
+          },
+          "60": {
+            "dedo": 1,
+            "mao": "direita"
+          }
+        },
+        "exercicioGuiado": [
+          "Coloque as duas mãos na posição de Dó: esquerda a partir do C3, direita a partir do Dó central.",
+          "Toque os dois Dós juntos 4 vezes, contando 1, 2, 3, 4.",
+          "Suba juntos: Dó-Dó, Ré-Ré, Mi-Mi, Fá-Fá, Sol-Sol.",
+          "Desça juntos até os Dós.",
+          "Repita 3 vezes. Se as mãos se desencontrarem, diminua a velocidade."
+        ],
+        "tempos": {
+          "explicacao": 3,
+          "observacao": 2,
+          "pratica": 7,
+          "exercicio": 5
+        },
+        "desafio": "Toque o Dó 3 (mão esquerda) e o Dó central (mão direita) ao mesmo tempo.",
+        "criterio": {
+          "tipo": "acorde",
+          "notas": [
+            48,
+            60
+          ],
+          "instrucao": "Toque os dois Dós destacados juntos (ao mesmo tempo ou bem rápido, um logo após o outro)."
+        }
+      }
+    ]
+  },
+  {
+    "id": "m3",
+    "numero": 3,
+    "titulo": "Ritmo e tempo musical",
+    "descricao": "Pulso, contagem, BPM e o metrônomo do CT-S300.",
+    "aulas": [
+      {
+        "id": "m3-a1",
+        "titulo": "O que é ritmo",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m3-a2",
+        "titulo": "O que é tempo musical",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m3-a3",
+        "titulo": "Conhecendo o metrônomo",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m3-a4",
+        "titulo": "Como utilizar o metrônomo do CT-S300",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m3-a5",
+        "titulo": "Contagem de 1 a 4",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m3-a6",
+        "titulo": "Entendendo BPM",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m3-a7",
+        "titulo": "Ritmos lentos e rápidos",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m3-a8",
+        "titulo": "Exercícios de acompanhamento",
+        "status": "em_preparo"
+      }
+    ]
+  },
+  {
+    "id": "m4",
+    "numero": 4,
+    "titulo": "Leitura musical",
+    "descricao": "Pauta, claves, figuras e pausas.",
+    "aulas": [
+      {
+        "id": "m4-a1",
+        "titulo": "Conhecendo a pauta",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m4-a2",
+        "titulo": "Linhas e espaços",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m4-a3",
+        "titulo": "Clave de sol",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m4-a4",
+        "titulo": "Clave de fá",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m4-a5",
+        "titulo": "Figuras musicais",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m4-a6",
+        "titulo": "Semibreve",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m4-a7",
+        "titulo": "Mínima",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m4-a8",
+        "titulo": "Semínima",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m4-a9",
+        "titulo": "Colcheia",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m4-a10",
+        "titulo": "Semicolcheia",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m4-a11",
+        "titulo": "Pausas musicais",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m4-a12",
+        "titulo": "Primeira leitura musical",
+        "status": "em_preparo"
+      }
+    ]
+  },
+  {
+    "id": "m5",
+    "numero": 5,
+    "titulo": "Primeiros acordes",
+    "descricao": "Os acordes mais usados e como trocar entre eles.",
+    "aulas": [
+      {
+        "id": "m5-a1",
+        "titulo": "O que são acordes",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m5-a2",
+        "titulo": "Conhecendo o acorde C",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m5-a3",
+        "titulo": "Conhecendo o acorde F",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m5-a4",
+        "titulo": "Conhecendo o acorde G",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m5-a5",
+        "titulo": "Conhecendo o acorde Am",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m5-a6",
+        "titulo": "Conhecendo o acorde Dm",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m5-a7",
+        "titulo": "Conhecendo o acorde Em",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m5-a8",
+        "titulo": "Conhecendo o acorde D",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m5-a9",
+        "titulo": "Como mudar de um acorde para outro",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m5-a10",
+        "titulo": "Primeiras sequências de acordes",
+        "status": "em_preparo"
+      }
+    ]
+  },
+  {
+    "id": "m6",
+    "numero": 6,
+    "titulo": "Tocando com as duas mãos",
+    "descricao": "Melodia na direita, acordes na esquerda.",
+    "aulas": [
+      {
+        "id": "m6-a1",
+        "titulo": "Função da mão direita",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m6-a2",
+        "titulo": "Função da mão esquerda",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m6-a3",
+        "titulo": "Tocando acordes com a esquerda",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m6-a4",
+        "titulo": "Tocando melodias com a direita",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m6-a5",
+        "titulo": "Independência das mãos",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m6-a6",
+        "titulo": "Coordenando as duas mãos",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m6-a7",
+        "titulo": "Primeira música com as duas mãos",
+        "status": "em_preparo"
+      }
+    ]
+  },
+  {
+    "id": "m7",
+    "numero": 7,
+    "titulo": "Dominando o Casio CT-S300",
+    "descricao": "Timbres, ritmos, acompanhamento e recursos do seu teclado.",
+    "aulas": [
+      {
+        "id": "m7-a1",
+        "titulo": "Conhecendo os 400 timbres",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m7-a2",
+        "titulo": "Como selecionar timbres",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m7-a3",
+        "titulo": "Como encontrar sons de piano",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m7-a4",
+        "titulo": "Como encontrar sons de órgão",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m7-a5",
+        "titulo": "Como selecionar outros instrumentos",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m7-a6",
+        "titulo": "Conhecendo os ritmos disponíveis",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m7-a7",
+        "titulo": "Como selecionar ritmos",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m7-a8",
+        "titulo": "Como utilizar o acompanhamento automático",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m7-a9",
+        "titulo": "Como modificar o andamento",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m7-a10",
+        "titulo": "Como utilizar o metrônomo",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m7-a11",
+        "titulo": "Como utilizar Sustain",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m7-a12",
+        "titulo": "Como utilizar Pitch Bend",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m7-a13",
+        "titulo": "Como utilizar Reverb",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m7-a14",
+        "titulo": "Conhecendo o Dance Music Mode",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m7-a15",
+        "titulo": "Como utilizar My Setup",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m7-a16",
+        "titulo": "Como utilizar as músicas internas",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m7-a17",
+        "titulo": "Como praticar utilizando as músicas internas",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m7-a18",
+        "titulo": "Como utilizar os recursos de acompanhamento",
+        "status": "em_preparo"
+      }
+    ]
+  },
+  {
+    "id": "m8",
+    "numero": 8,
+    "titulo": "Aprendendo músicas completas",
+    "descricao": "Biblioteca de músicas por nível.",
+    "aulas": [
+      {
+        "id": "m8-a1",
+        "titulo": "Biblioteca de músicas (Muito fácil)",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m8-a2",
+        "titulo": "Biblioteca de músicas (Fácil)",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m8-a3",
+        "titulo": "Biblioteca de músicas (Intermediário)",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m8-a4",
+        "titulo": "Biblioteca de músicas (Avançado)",
+        "status": "em_preparo"
+      }
+    ]
+  },
+  {
+    "id": "m9",
+    "numero": 9,
+    "titulo": "Estilos musicais",
+    "descricao": "Pop, rock, sertanejo, forró, gospel e mais.",
+    "aulas": [
+      {
+        "id": "m9-a1",
+        "titulo": "Pop",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m9-a2",
+        "titulo": "Rock",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m9-a3",
+        "titulo": "Sertanejo",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m9-a4",
+        "titulo": "Forró",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m9-a5",
+        "titulo": "Gospel",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m9-a6",
+        "titulo": "Romântico",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m9-a7",
+        "titulo": "Balada",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m9-a8",
+        "titulo": "Outros ritmos",
+        "status": "em_preparo"
+      }
+    ]
+  },
+  {
+    "id": "m10",
+    "numero": 10,
+    "titulo": "Técnicas de teclado",
+    "descricao": "Escalas, arpejos, inversões e velocidade.",
+    "aulas": [
+      {
+        "id": "m10-a1",
+        "titulo": "Escalas maiores",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m10-a2",
+        "titulo": "Escalas menores",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m10-a3",
+        "titulo": "Escala de Dó maior",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m10-a4",
+        "titulo": "Escala de Sol maior",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m10-a5",
+        "titulo": "Escala de Fá maior",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m10-a6",
+        "titulo": "Arpejos",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m10-a7",
+        "titulo": "Inversões de acordes",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m10-a8",
+        "titulo": "Passagens entre acordes",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m10-a9",
+        "titulo": "Velocidade dos dedos",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m10-a10",
+        "titulo": "Independência avançada das mãos",
+        "status": "em_preparo"
+      }
+    ]
+  },
+  {
+    "id": "m11",
+    "numero": 11,
+    "titulo": "Tocando de ouvido",
+    "descricao": "Reconhecer notas, melodias e acordes pelo som.",
+    "aulas": [
+      {
+        "id": "m11-a1",
+        "titulo": "Reconhecendo notas",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m11-a2",
+        "titulo": "Identificando melodias",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m11-a3",
+        "titulo": "Descobrindo a primeira nota",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m11-a4",
+        "titulo": "Identificando sequências",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m11-a5",
+        "titulo": "Reconhecendo acordes",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m11-a6",
+        "titulo": "Reproduzindo músicas sem partituras",
+        "status": "em_preparo"
+      }
+    ]
+  },
+  {
+    "id": "m12",
+    "numero": 12,
+    "titulo": "Nível avançado",
+    "descricao": "Harmonia, arranjo, improvisação e projeto final.",
+    "aulas": [
+      {
+        "id": "m12-a1",
+        "titulo": "Formação de acordes",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m12-a2",
+        "titulo": "Campo harmônico maior",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m12-a3",
+        "titulo": "Campo harmônico menor",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m12-a4",
+        "titulo": "Progressões harmônicas",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m12-a5",
+        "titulo": "Acompanhamento avançado",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m12-a6",
+        "titulo": "Introduções",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m12-a7",
+        "titulo": "Finalizações",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m12-a8",
+        "titulo": "Improvisação",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m12-a9",
+        "titulo": "Criação de arranjos",
+        "status": "em_preparo"
+      },
+      {
+        "id": "m12-a10",
+        "titulo": "Projeto musical final",
+        "status": "em_preparo"
+      }
+    ]
+  }
+]
