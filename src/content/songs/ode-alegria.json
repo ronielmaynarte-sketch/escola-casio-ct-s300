@@ -1,0 +1,39 @@
+{
+  "id": "ode-alegria",
+  "titulo": "Ode à Alegria",
+  "compositor": "Ludwig van Beethoven (9ª Sinfonia, 1824)",
+  "categoria": "classicas",
+  "compasso": [
+    4,
+    4
+  ],
+  "bpm": 100,
+  "tonalidade": "Dó maior",
+  "descricao": "O tema completo, em Dó maior. Ótima para começar: a mão direita quase não sai do lugar.",
+  "licenca": "Composta em 1824 — domínio público.",
+  "fontes": [
+    "Melodia transcrita da partitura de domínio público e conferida nota a nota."
+  ],
+  "secoes": [
+    {
+      "nome": "Frase 1",
+      "md": "E4:1 E4 F4 G4 | G4 F4 E4 D4 | C4 C4 D4 E4 | E4:1.5 D4:0.5 D4:2",
+      "harmonia": "C G C G"
+    },
+    {
+      "nome": "Frase 2",
+      "md": "E4:1 E4 F4 G4 | G4 F4 E4 D4 | C4 C4 D4 E4 | D4:1.5 C4:0.5 C4:2",
+      "harmonia": "C G C G:2 C:2"
+    },
+    {
+      "nome": "Frase 3 (meio)",
+      "md": "D4:1 D4 E4 C4 | D4 E4:0.5 F4 E4:1 C4 | D4 E4:0.5 F4 E4:1 D4 | C4 D4 G3:2",
+      "harmonia": "G G:2 C:2 G C:2 G:2"
+    },
+    {
+      "nome": "Frase 4",
+      "md": "E4:1 E4 F4 G4 | G4 F4 E4 D4 | C4 C4 D4 E4 | D4:1.5 C4:0.5 C4:2",
+      "harmonia": "C G C G:2 C:2"
+    }
+  ]
+}

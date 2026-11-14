@@ -1,5 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom'
-import { ChevronRight, Clock, Flame, GraduationCap, Hourglass, Piano, Play, Trophy } from 'lucide-react'
+import { BarChart3, ChevronRight, Clock, Flame, GraduationCap, Hand, Hourglass, Library, Music, Piano, Play, Settings, Sparkles, Trophy } from 'lucide-react'
+import type { LucideIcon } from 'lucide-react'
 import { useProgresso } from '../lib/ProgressContext'
 import {
   CURSO,
@@ -43,6 +44,18 @@ export default function Painel() {
           <p className="text-sm text-slate-400">Teclado: {CURSO.teclado}</p>
         </div>
       </header>
+
+      <nav aria-label="Menu principal" className="grid grid-cols-3 gap-2 sm:grid-cols-3" data-testid="menu-principal">
+        <ItemMenu Icon={GraduationCap} rotulo="Aprender do zero" onClick={continuar} destaque />
+        <ItemMenu Icon={Library} rotulo="Biblioteca de músicas" to="/musicas" />
+        <ItemMenu Icon={Music} rotulo="Músicas de Luiz Gonzaga" to="/musicas?cat=gonzaga" />
+        <ItemMenu Icon={Sparkles} rotulo="Músicas famosas de piano" to="/musicas?cat=classicas" />
+        <ItemMenu Icon={Hand} rotulo="Treinar mão direita" to="/musicas?modo=direita" />
+        <ItemMenu Icon={Hand} rotulo="Treinar mão esquerda" to="/musicas?modo=esquerda" espelhar />
+        <ItemMenu Icon={Piano} rotulo="Treinar as duas mãos" to="/musicas?modo=juntas" />
+        <ItemMenu Icon={BarChart3} rotulo="Meu progresso" to="/meu-progresso" />
+        <ItemMenu Icon={Settings} rotulo="Configurações" to="/config" />
+      </nav>
 
       <Cartao className="relative overflow-hidden p-5">
         <div className="pointer-events-none absolute -right-10 -top-16 h-48 w-48 rounded-full bg-amber-500/20 blur-3xl" />
@@ -154,5 +167,26 @@ function Info({ Icon, valor, rotulo }: { Icon: typeof Clock; valor: string; rotu
       <p className="mt-2 text-base font-bold leading-tight text-white">{valor}</p>
       <p className="text-[11px] leading-tight text-slate-400">{rotulo}</p>
     </Cartao>
+  )
+}
+
+function ItemMenu({ Icon, rotulo, to, onClick, destaque, espelhar }: { Icon: LucideIcon; rotulo: string; to?: string; onClick?: () => void; destaque?: boolean; espelhar?: boolean }) {
+  const cls = `flex min-h-[84px] flex-col items-center justify-center gap-1.5 rounded-2xl border p-2 text-center text-[12px] font-semibold leading-tight active:scale-[0.97] ${
+    destaque ? 'border-amber-400/50 bg-amber-400/15 text-amber-100' : 'border-white/10 bg-white/[0.04] text-slate-100'
+  }`
+  const conteudo = (
+    <>
+      <Icon size={22} className={`${destaque ? 'text-amber-300' : 'text-amber-400'} ${espelhar ? '-scale-x-100' : ''}`} />
+      {rotulo}
+    </>
+  )
+  return to ? (
+    <Link to={to} className={cls}>
+      {conteudo}
+    </Link>
+  ) : (
+    <button type="button" onClick={onClick} className={cls}>
+      {conteudo}
+    </button>
   )
 }

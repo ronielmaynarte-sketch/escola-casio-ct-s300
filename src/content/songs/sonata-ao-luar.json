@@ -1,0 +1,35 @@
+{
+  "id": "sonata-ao-luar",
+  "titulo": "Sonata ao Luar — 1º mov. (abertura)",
+  "compositor": "Ludwig van Beethoven (Sonata op. 27 nº 2, 1801)",
+  "categoria": "classicas",
+  "compasso": [
+    4,
+    4
+  ],
+  "bpm": 52,
+  "tonalidade": "Dó# menor",
+  "divisao": 54,
+  "descricao": "Compassos 1–4: as tercinas da mão direita sobre o baixo. Escrito em 4/4 (o original é alla breve); cada tercina = 1/3 de batida.",
+  "licenca": "Publicada em 1802 — domínio público.",
+  "fontes": [
+    "Melodia transcrita da partitura de domínio público e conferida nota a nota."
+  ],
+  "observacoes": {
+    "avancado": "As oitavas graves do original (Si1, Lá1, Fá#1, Sol#1) ficam abaixo do Dó2 do CT-S300; tocamos só a nota de cima. O Si# do compasso 4 aparece como Dó (é a mesma tecla)."
+  },
+  "secoes": [
+    {
+      "nome": "Compassos 1–2",
+      "md": "G#3:1/3 C#4 E4 G#3 C#4 E4 G#3 C#4 E4 G#3 C#4 E4 | G#3 C#4 E4 G#3 C#4 E4 G#3 C#4 E4 G#3 C#4 E4",
+      "meIntermediario": "C#3:4 B2:4",
+      "meAvancado": "[C#2 C#3]:4 B2:4"
+    },
+    {
+      "nome": "Compassos 3–4",
+      "md": "A3:1/3 C#4 E4 A3 C#4 E4 A3 D4 F#4 A3 D4 F#4 | G#3 C4 F#4 G#3 C#4 E4 G#3 C#4 D#4 F#3 C4 D#4",
+      "meIntermediario": "A2:4 G#2:4",
+      "meAvancado": "A2:2 F#2:2 G#2:4"
+    }
+  ]
+}

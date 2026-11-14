@@ -6,12 +6,20 @@ import ModuloPagina from './pages/ModuloPagina'
 import AulaPagina from './pages/AulaPagina'
 import Progresso from './pages/Progresso'
 import EmConstrucao from './pages/EmConstrucao'
+import Biblioteca from './pages/Biblioteca'
+import MusicaDetalhe from './pages/MusicaDetalhe'
+import Tocar from './pages/Tocar'
+import Importar from './pages/Importar'
+import MeuProgresso from './pages/MeuProgresso'
+import Configuracoes from './pages/Configuracoes'
 
 export default function App() {
   return (
     <ProgressProvider>
       <HashRouter>
         <Routes>
+          {/* tela de tocar ocupa a tela toda (cabe no iPhone deitado) */}
+          <Route path="tocar/:id" element={<Tocar />} />
           <Route element={<Layout />}>
             <Route index element={<Painel />} />
             <Route path="modulo/:id" element={<ModuloPagina />} />
@@ -21,10 +29,11 @@ export default function App() {
               path="dicionario"
               element={<EmConstrucao titulo="Dicionário musical" etapa={2} descricao="Aqui vão ficar os termos musicais (acorde, oitava, semitom, BPM...) e as funções do CT-S300, explicados de forma simples." />}
             />
-            <Route
-              path="musicas"
-              element={<EmConstrucao titulo="Músicas" etapa={4} descricao="A biblioteca de músicas por nível (muito fácil a avançado) com tutoriais passo a passo ainda está sendo preparada." />}
-            />
+            <Route path="musicas" element={<Biblioteca />} />
+            <Route path="musica/:id" element={<MusicaDetalhe />} />
+            <Route path="importar" element={<Importar />} />
+            <Route path="meu-progresso" element={<MeuProgresso />} />
+            <Route path="config" element={<Configuracoes />} />
             <Route
               path="admin"
               element={<EmConstrucao titulo="Administração" etapa={5} descricao="O painel para editar aulas e músicas depende de login e banco de dados (ex.: Supabase), que ainda não foram configurados." />}

@@ -1,0 +1,275 @@
+{
+  "quadro_seno": {
+    "acertos": 61,
+    "total": 61,
+    "erros": []
+  },
+  "quadro_harmonicos": {
+    "acertos": 61,
+    "total": 61,
+    "erros": []
+  },
+  "quadro_piano": {
+    "acertos": 61,
+    "total": 61,
+    "erros": []
+  },
+  "quadro_alto-falante": {
+    "acertos": 61,
+    "total": 61,
+    "erros": []
+  },
+  "fluxo_piano, ruído baixo": {
+    "acertos": 61,
+    "total": 61,
+    "porFaixa": {
+      "Dó2–Si2 (36–47)": {
+        "ok": 12,
+        "total": 12,
+        "erros": []
+      },
+      "Dó3–Si3 (48–59)": {
+        "ok": 12,
+        "total": 12,
+        "erros": []
+      },
+      "Dó4–Si4 (60–71)": {
+        "ok": 12,
+        "total": 12,
+        "erros": []
+      },
+      "Dó5–Si5 (72–83)": {
+        "ok": 12,
+        "total": 12,
+        "erros": []
+      },
+      "Dó6–Dó7 (84–96)": {
+        "ok": 13,
+        "total": 13,
+        "erros": []
+      }
+    }
+  },
+  "fluxo_piano, ruído médio (-30 dB)": {
+    "acertos": 61,
+    "total": 61,
+    "porFaixa": {
+      "Dó2–Si2 (36–47)": {
+        "ok": 12,
+        "total": 12,
+        "erros": []
+      },
+      "Dó3–Si3 (48–59)": {
+        "ok": 12,
+        "total": 12,
+        "erros": []
+      },
+      "Dó4–Si4 (60–71)": {
+        "ok": 12,
+        "total": 12,
+        "erros": []
+      },
+      "Dó5–Si5 (72–83)": {
+        "ok": 12,
+        "total": 12,
+        "erros": []
+      },
+      "Dó6–Dó7 (84–96)": {
+        "ok": 13,
+        "total": 13,
+        "erros": []
+      }
+    }
+  },
+  "fluxo_alto-falante pequeno (graves cortados), ruído médio": {
+    "acertos": 61,
+    "total": 61,
+    "porFaixa": {
+      "Dó2–Si2 (36–47)": {
+        "ok": 12,
+        "total": 12,
+        "erros": []
+      },
+      "Dó3–Si3 (48–59)": {
+        "ok": 12,
+        "total": 12,
+        "erros": []
+      },
+      "Dó4–Si4 (60–71)": {
+        "ok": 12,
+        "total": 12,
+        "erros": []
+      },
+      "Dó5–Si5 (72–83)": {
+        "ok": 12,
+        "total": 12,
+        "erros": []
+      },
+      "Dó6–Dó7 (84–96)": {
+        "ok": 13,
+        "total": 13,
+        "erros": []
+      }
+    }
+  },
+  "fluxo_piano desafinado +25 cents": {
+    "acertos": 61,
+    "total": 61,
+    "porFaixa": {
+      "Dó2–Si2 (36–47)": {
+        "ok": 12,
+        "total": 12,
+        "erros": []
+      },
+      "Dó3–Si3 (48–59)": {
+        "ok": 12,
+        "total": 12,
+        "erros": []
+      },
+      "Dó4–Si4 (60–71)": {
+        "ok": 12,
+        "total": 12,
+        "erros": []
+      },
+      "Dó5–Si5 (72–83)": {
+        "ok": 12,
+        "total": 12,
+        "erros": []
+      },
+      "Dó6–Dó7 (84–96)": {
+        "ok": 13,
+        "total": 13,
+        "erros": []
+      }
+    }
+  },
+  "repetidas": {
+    "acertos": 9,
+    "total": 10
+  },
+  "melodia": {
+    "esperado": [
+      64,
+      64,
+      65,
+      67,
+      67,
+      65,
+      64,
+      62,
+      60,
+      60,
+      62,
+      64,
+      64,
+      62,
+      62
+    ],
+    "detectado": [
+      64,
+      64,
+      65,
+      67,
+      67,
+      65,
+      64,
+      62,
+      60,
+      60,
+      62,
+      64,
+      64,
+      62,
+      62
+    ]
+  },
+  "ruido": {
+    "eventos": 0
+  },
+  "oitava_com_esperada": {
+    "acertos": 24,
+    "total": 24
+  },
+  "acordes": {
+    "porForma": {
+      "tríade maior": {
+        "completo": [
+          18,
+          19
+        ],
+        "faltando": [
+          19,
+          19
+        ],
+        "errada": [
+          19,
+          19
+        ]
+      },
+      "tríade menor": {
+        "completo": [
+          17,
+          19
+        ],
+        "faltando": [
+          19,
+          19
+        ],
+        "errada": [
+          19,
+          19
+        ]
+      },
+      "quinta (2 notas)": {
+        "completo": [
+          19,
+          19
+        ],
+        "faltando": [
+          19,
+          19
+        ],
+        "errada": [
+          19,
+          19
+        ]
+      },
+      "terça (2 notas)": {
+        "completo": [
+          18,
+          19
+        ],
+        "faltando": [
+          19,
+          19
+        ],
+        "errada": [
+          19,
+          19
+        ]
+      },
+      "baixo + terça e quinta (mão esquerda)": {
+        "completo": [
+          19,
+          19
+        ],
+        "faltando": [
+          19,
+          19
+        ],
+        "errada": [
+          19,
+          19
+        ]
+      }
+    },
+    "completoDetectado": "91/95 (96%)",
+    "faltandoPercebido": "95/95 (100%)",
+    "erradaPercebida": "95/95 (100%)",
+    "erradaIdentificadaExata": "88/95 (93%)"
+  },
+  "acorde_processador": {
+    "acertos": 7,
+    "total": 7
+  }
+}

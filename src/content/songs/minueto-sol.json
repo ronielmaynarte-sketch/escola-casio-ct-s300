@@ -1,0 +1,43 @@
+{
+  "id": "minueto-sol",
+  "titulo": "Minueto em Sol",
+  "compositor": "Christian Petzold (BWV Anh. 114, do Caderno de Anna Magdalena Bach, 1725)",
+  "categoria": "classicas",
+  "compasso": [
+    3,
+    4
+  ],
+  "bpm": 100,
+  "tonalidade": "Sol maior",
+  "descricao": "A primeira parte do minueto (16 compassos).",
+  "licenca": "Composto por volta de 1725 — domínio público.",
+  "fontes": [
+    "Melodia transcrita da partitura de domínio público e conferida nota a nota."
+  ],
+  "observacoes": {
+    "intermediario": "A mão esquerda é um baixo simplificado (não é a linha original).",
+    "avancado": "Acompanhamento simplificado em baixo + acorde (não é a mão esquerda original)."
+  },
+  "secoes": [
+    {
+      "nome": "Frase 1 (compassos 1–4)",
+      "md": "D5:1 G4:0.5 A4 B4 C5 | D5:1 G4 G4 | E5:1 C5:0.5 D5 E5 F#5 | G5:1 G4 G4",
+      "harmonia": "G G C G"
+    },
+    {
+      "nome": "Frase 2 (compassos 5–8)",
+      "md": "C5:1 D5:0.5 C5 B4 A4 | B4:1 C5:0.5 B4 A4 G4 | F#4:1 G4:0.5 A4 B4 G4 | A4:3",
+      "harmonia": "C G D7 D"
+    },
+    {
+      "nome": "Frase 3 (compassos 9–12)",
+      "md": "D5:1 G4:0.5 A4 B4 C5 | D5:1 G4 G4 | E5:1 C5:0.5 D5 E5 F#5 | G5:1 G4 G4",
+      "harmonia": "G G C G"
+    },
+    {
+      "nome": "Frase 4 (compassos 13–16)",
+      "md": "C5:1 D5:0.5 C5 B4 A4 | B4:1 C5:0.5 B4 A4 G4 | A4:1 B4:0.5 A4 G4 F#4 | G4:3",
+      "harmonia": "C G D7 G"
+    }
+  ]
+}

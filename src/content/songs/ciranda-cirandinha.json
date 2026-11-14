@@ -1,0 +1,40 @@
+{
+  "id": "ciranda-cirandinha",
+  "titulo": "Ciranda, Cirandinha",
+  "compositor": "Folclore brasileiro",
+  "categoria": "infantis",
+  "compasso": [
+    2,
+    4
+  ],
+  "bpm": 100,
+  "tonalidade": "Sol maior",
+  "ritmoAproximado": true,
+  "descricao": "Cantiga de roda tradicional. As notas foram conferidas; o ritmo é aproximado (o professor confere as notas).",
+  "licenca": "Cantiga folclórica, sem autor conhecido — domínio público.",
+  "fontes": [
+    "Notas conferidas com potatoflute.com/pt/packs/brazil/ciranda e inesmcgutti.jimdofree.com/kids/ciranda-cirandinha (mesma sequência, transposta)."
+  ],
+  "secoes": [
+    {
+      "nome": "Ciranda, cirandinha",
+      "md": "D4:0.5 G4 G4 B4 B4 D5 D5:1",
+      "harmonia": "G:4"
+    },
+    {
+      "nome": "Vamos todos cirandar",
+      "md": "C5:0.5 B4 A4 D5 B4 A4 G4:1",
+      "harmonia": "D7:3 G:1"
+    },
+    {
+      "nome": "Vamos dar a meia volta",
+      "md": "B4:0.5 D5 C5 B4 A4 G4 F#4 D4:1",
+      "harmonia": "G:2.5 D7:2"
+    },
+    {
+      "nome": "Volta e meia vamos dar",
+      "md": "C5:0.5 A4 B4 G4 A4 F#4 G4:1",
+      "harmonia": "D7:3 G:1"
+    }
+  ]
+}

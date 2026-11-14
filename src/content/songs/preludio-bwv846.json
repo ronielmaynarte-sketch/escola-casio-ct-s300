@@ -1,0 +1,43 @@
+{
+  "id": "preludio-bwv846",
+  "titulo": "Prelúdio em Dó (abertura)",
+  "compositor": "Johann Sebastian Bach (BWV 846, O Cravo Bem Temperado, 1722)",
+  "categoria": "classicas",
+  "compasso": [
+    4,
+    4
+  ],
+  "bpm": 66,
+  "tonalidade": "Dó maior",
+  "divisao": 62,
+  "descricao": "Compassos 1–11. Cada meio compasso é o mesmo desenho de arpejo; batida = semínima, semicolcheia = 1/4.",
+  "licenca": "Composto em 1722 — domínio público.",
+  "fontes": [
+    "Melodia transcrita da partitura de domínio público e conferida nota a nota."
+  ],
+  "observacoes": {
+    "facil": "Só o desenho da mão direita (3 notas que se repetem).",
+    "intermediario": "Mão esquerda: só a nota grave, uma vez por compasso.",
+    "avancado": "As duas notas da mão esquerda como no original."
+  },
+  "secoes": [
+    {
+      "nome": "Compassos 1–4",
+      "md": "R:0.5 G4:0.25 C5 E5 G4 C5 E5 R:0.5 G4:0.25 C5 E5 G4 C5 E5 | R:0.5 A4:0.25 D5 F5 A4 D5 F5 R:0.5 A4:0.25 D5 F5 A4 D5 F5 | R:0.5 G4:0.25 D5 F5 G4 D5 F5 R:0.5 G4:0.25 D5 F5 G4 D5 F5 | R:0.5 G4:0.25 C5 E5 G4 C5 E5 R:0.5 G4:0.25 C5 E5 G4 C5 E5",
+      "meIntermediario": "C4:4 C4:4 B3:4 C4:4",
+      "meAvancado": "C4:0.25 E4:1.75 C4:0.25 E4:1.75 | C4:0.25 D4:1.75 C4:0.25 D4:1.75 | B3:0.25 D4:1.75 B3:0.25 D4:1.75 | C4:0.25 E4:1.75 C4:0.25 E4:1.75"
+    },
+    {
+      "nome": "Compassos 5–8",
+      "md": "R:0.5 A4:0.25 E5 A5 A4 E5 A5 R:0.5 A4:0.25 E5 A5 A4 E5 A5 | R:0.5 F#4:0.25 A4 D5 F#4 A4 D5 R:0.5 F#4:0.25 A4 D5 F#4 A4 D5 | R:0.5 G4:0.25 D5 G5 G4 D5 G5 R:0.5 G4:0.25 D5 G5 G4 D5 G5 | R:0.5 E4:0.25 G4 C5 E4 G4 C5 R:0.5 E4:0.25 G4 C5 E4 G4 C5",
+      "meIntermediario": "C4:4 C4:4 B3:4 B3:4",
+      "meAvancado": "C4:0.25 E4:1.75 C4:0.25 E4:1.75 | C4:0.25 D4:1.75 C4:0.25 D4:1.75 | B3:0.25 D4:1.75 B3:0.25 D4:1.75 | B3:0.25 C4:1.75 B3:0.25 C4:1.75"
+    },
+    {
+      "nome": "Compassos 9–11",
+      "md": "R:0.5 E4:0.25 G4 C5 E4 G4 C5 R:0.5 E4:0.25 G4 C5 E4 G4 C5 | R:0.5 D4:0.25 F#4 C5 D4 F#4 C5 R:0.5 D4:0.25 F#4 C5 D4 F#4 C5 | R:0.5 D4:0.25 G4 B4 D4 G4 B4 R:0.5 D4:0.25 G4 B4 D4 G4 B4",
+      "meIntermediario": "A3:4 D3:4 G3:4",
+      "meAvancado": "A3:0.25 C4:1.75 A3:0.25 C4:1.75 | D3:0.25 A3:1.75 D3:0.25 A3:1.75 | G3:0.25 B3:1.75 G3:0.25 B3:1.75"
+    }
+  ]
+}

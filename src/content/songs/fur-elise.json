@@ -1,0 +1,35 @@
+{
+  "id": "fur-elise",
+  "titulo": "Für Elise (Pour Elise) — parte A",
+  "compositor": "Ludwig van Beethoven (WoO 59, c. 1810)",
+  "categoria": "classicas",
+  "compasso": [
+    3,
+    8
+  ],
+  "bpm": 104,
+  "tonalidade": "Lá menor",
+  "descricao": "Os 8 primeiros compassos (tema A). Batida = colcheia; semicolcheia = meia batida.",
+  "licenca": "Composta por volta de 1810 — domínio público.",
+  "fontes": [
+    "Melodia transcrita da partitura de domínio público e conferida nota a nota."
+  ],
+  "observacoes": {
+    "intermediario": "Mão esquerda: só o baixo (Lá ou Mi) no início do compasso.",
+    "avancado": "Mão esquerda com o arpejo original (Lá–Mi–Lá / Mi–Mi–Sol#)."
+  },
+  "secoes": [
+    {
+      "nome": "Frase 1 (compassos 1–4)",
+      "md": "E5:0.5 D#5 | E5 D#5 E5 B4 D5 C5 | A4:1 R:0.5 C4:0.5 E4 A4 | B4:1 R:0.5 E4:0.5 G#4 B4 | C5:1 R:0.5 E4:0.5 E5 D#5",
+      "harmonia": "R:1 R:3 Am:3 E:3 Am:3",
+      "meAvancado": "R:1 R:3 A2:0.5 E3 A3 R:1.5 E2:0.5 E3 G#3 R:1.5 A2:0.5 E3 A3 R:1.5"
+    },
+    {
+      "nome": "Frase 2 (compassos 5–8)",
+      "md": "E5:0.5 D#5 E5 B4 D5 C5 | A4:1 R:0.5 C4:0.5 E4 A4 | B4:1 R:0.5 E4:0.5 C5 B4 | A4:3",
+      "harmonia": "R:3 Am:3 E:3 Am:3",
+      "meAvancado": "R:3 A2:0.5 E3 A3 R:1.5 E2:0.5 E3 G#3 R:1.5 A2:0.5 E3 A3 R:1.5"
+    }
+  ]
+}

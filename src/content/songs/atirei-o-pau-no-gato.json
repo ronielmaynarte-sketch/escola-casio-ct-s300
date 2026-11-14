@@ -1,0 +1,40 @@
+{
+  "id": "atirei-o-pau-no-gato",
+  "titulo": "Atirei o Pau no Gato",
+  "compositor": "Folclore brasileiro",
+  "categoria": "infantis",
+  "compasso": [
+    2,
+    4
+  ],
+  "bpm": 100,
+  "tonalidade": "Dó maior",
+  "ritmoAproximado": true,
+  "descricao": "Cantiga tradicional (também cantada como \"Não atire o pau no gato\"). Notas conferidas; ritmo aproximado.",
+  "licenca": "Cantiga folclórica, sem autor conhecido — domínio público.",
+  "fontes": [
+    "Notas conferidas com sotecladosolos.blogspot.com (Atirei o Pau no Gato \"Notas Musicais\") e aulaviolaodeboa.com (cifra e solo), que concordam nota a nota."
+  ],
+  "secoes": [
+    {
+      "nome": "Atirei o pau no gato",
+      "md": "G4:0.5 F4 E4 D4 E4 F4 G4 G4 G4:1",
+      "harmonia": "C:5"
+    },
+    {
+      "nome": "Mas o gato não morreu",
+      "md": "A4:0.5 G4 F4 F4 F4:1 | G4:0.5 F4 E4 E4 E4:1",
+      "harmonia": "G7:3 C:3"
+    },
+    {
+      "nome": "Dona Chica admirou-se",
+      "md": "C4:0.5 C4 A4 A4 A4:1 | B4:0.5 A4 G4 G4 G4:1",
+      "harmonia": "F:3 G:3"
+    },
+    {
+      "nome": "Do berro que o gato deu — miau!",
+      "md": "E4:0.5 F4 G4:1 E4:0.5 F4 G4:1 | F4:0.5 E4 D4 C4:1 | C5:1 C5:1",
+      "harmonia": "C:4 G7:1.5 C:1 C:2"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "brilha-estrelinha",
+  "titulo": "Brilha, Brilha, Estrelinha",
+  "compositor": "Melodia tradicional francesa (\"Ah! vous dirai-je, maman\", século XVIII)",
+  "categoria": "infantis",
+  "compasso": [
+    4,
+    4
+  ],
+  "bpm": 96,
+  "tonalidade": "Dó maior",
+  "descricao": "A primeira música de quase todo pianista.",
+  "licenca": "Melodia tradicional do século XVIII — domínio público.",
+  "fontes": [
+    "Melodia transcrita da partitura de domínio público e conferida nota a nota."
+  ],
+  "secoes": [
+    {
+      "nome": "Frase 1",
+      "md": "C4:1 C4 G4 G4 | A4 A4 G4:2 | F4:1 F4 E4 E4 | D4 D4 C4:2",
+      "harmonia": "C F:2 C:2 F:2 C:2 G:2 C:2"
+    },
+    {
+      "nome": "Frase 2",
+      "md": "G4:1 G4 F4 F4 | E4 E4 D4:2 | G4:1 G4 F4 F4 | E4 E4 D4:2",
+      "harmonia": "C:2 G:2 C:2 G:2 C:2 G:2 C:2 G:2"
+    },
+    {
+      "nome": "Frase 3",
+      "md": "C4:1 C4 G4 G4 | A4 A4 G4:2 | F4:1 F4 E4 E4 | D4 D4 C4:2",
+      "harmonia": "C F:2 C:2 F:2 C:2 G:2 C:2"
+    }
+  ]
+}

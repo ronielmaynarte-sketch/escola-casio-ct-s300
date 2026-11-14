@@ -1,0 +1,39 @@
+{
+  "id": "marcha-nupcial-wagner",
+  "titulo": "Marcha Nupcial (\"Lá vem a noiva\")",
+  "compositor": "Richard Wagner (Coro Nupcial de Lohengrin, 1850)",
+  "categoria": "festas",
+  "compasso": [
+    2,
+    4
+  ],
+  "bpm": 72,
+  "tonalidade": "Dó maior (original em Si bemol)",
+  "descricao": "Os 16 primeiros compassos da melodia, transpostos para Dó maior.",
+  "licenca": "Composta em 1850 — domínio público.",
+  "fontes": [
+    "Melodia conferida com vivace-music.org (Bridal Chorus, letras das notas) e easypianoletters.com/sheets/bridal-chorus; ritmo pontuado do original (piano.org/songs/bridal-chorus)."
+  ],
+  "secoes": [
+    {
+      "nome": "Frase 1",
+      "md": "G4:1 C5:0.75 C5:0.25 | C5:2 | G4:1 D5:0.75 B4:0.25 | C5:2",
+      "harmonia": "C C G C"
+    },
+    {
+      "nome": "Frase 2",
+      "md": "G4:1 C5:0.75 F5:0.25 | F5:1 E5:0.75 D5:0.25 | C5:1 B4:0.75 C5:0.25 | D5:2",
+      "harmonia": "C:1 F:1 F C G"
+    },
+    {
+      "nome": "Frase 3",
+      "md": "G4:1 C5:0.75 C5:0.25 | C5:2 | G4:1 D5:0.75 B4:0.25 | C5:2",
+      "harmonia": "C C G C"
+    },
+    {
+      "nome": "Frase 4",
+      "md": "G4:1 C5:0.75 E5:0.25 | G5:1 E5:0.75 C5:0.25 | A4:1 D5:0.75 E5:0.25 | C5:2",
+      "harmonia": "C C F:1 G:1 C"
+    }
+  ]
+}

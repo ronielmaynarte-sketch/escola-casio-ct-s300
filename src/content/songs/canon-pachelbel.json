@@ -1,0 +1,44 @@
+{
+  "id": "canon-pachelbel",
+  "titulo": "Cânone em Ré (simplificado)",
+  "compositor": "Johann Pachelbel (c. 1680)",
+  "categoria": "classicas",
+  "compasso": [
+    4,
+    4
+  ],
+  "bpm": 60,
+  "tonalidade": "Ré maior",
+  "descricao": "O baixo famoso (Ré–Lá–Si–Fá#–Sol–Ré–Sol–Lá) com os dois primeiros temas e a variação em colcheias.",
+  "licenca": "Composto no século XVII — domínio público.",
+  "fontes": [
+    "Melodia transcrita da partitura de domínio público e conferida nota a nota."
+  ],
+  "observacoes": {
+    "intermediario": "Mão esquerda: o baixo original, uma nota por tempo.",
+    "avancado": "Mão esquerda: baixo + quinta (simplificação do contínuo)."
+  },
+  "secoes": [
+    {
+      "nome": "Tema 1",
+      "md": "F#5:1 E5 D5 C#5 B4 A4 B4 C#5",
+      "harmonia": "D:1 A:1 Bm:1 F#m:1 G:1 D:1 G:1 A:1",
+      "meIntermediario": "D3:1 A2 B2 F#2 G2 D2 G2 A2",
+      "meAvancado": "[D3 A3]:1 [A2 E3] [B2 F#3] [F#2 C#3] [G2 D3] [D2 A2] [G2 D3] [A2 E3]"
+    },
+    {
+      "nome": "Tema 2",
+      "md": "D5:1 C#5 B4 A4 G4 F#4 G4 E4",
+      "harmonia": "D:1 A:1 Bm:1 F#m:1 G:1 D:1 G:1 A:1",
+      "meIntermediario": "D3:1 A2 B2 F#2 G2 D2 G2 A2",
+      "meAvancado": "[D3 A3]:1 [A2 E3] [B2 F#3] [F#2 C#3] [G2 D3] [D2 A2] [G2 D3] [A2 E3]"
+    },
+    {
+      "nome": "Variação em colcheias",
+      "md": "D5:0.5 F#5 A5 G5 F#5 D5 F#5 E5 D5 B4 D5 A5 G5 B5 A5 G5",
+      "harmonia": "D:1 A:1 Bm:1 F#m:1 G:1 D:1 G:1 A:1",
+      "meIntermediario": "D3:1 A2 B2 F#2 G2 D2 G2 A2",
+      "meAvancado": "[D3 A3]:1 [A2 E3] [B2 F#3] [F#2 C#3] [G2 D3] [D2 A2] [G2 D3] [A2 E3]"
+    }
+  ]
+}

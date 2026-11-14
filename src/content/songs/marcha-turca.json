@@ -1,0 +1,34 @@
+{
+  "id": "marcha-turca",
+  "titulo": "Marcha Turca (abertura)",
+  "compositor": "Wolfgang Amadeus Mozart (Rondo alla Turca, Sonata K. 331, 1783)",
+  "categoria": "classicas",
+  "compasso": [
+    2,
+    4
+  ],
+  "bpm": 96,
+  "tonalidade": "Lá menor",
+  "divisao": 65,
+  "descricao": "Anacruse e compassos 1–8, sem os ornamentos e sem as terças internas da mão direita. Andamento original ≈126; aqui começa mais devagar.",
+  "licenca": "Publicada em 1784 — domínio público.",
+  "fontes": [
+    "Melodia conferida com a transcrição da Mutopia (domínio público) citada em musictheoryprint.com/charts/turkish-march-piano-notes e com notenames.app."
+  ],
+  "observacoes": {
+    "avancado": "Compassos 1–4 com a mão esquerda do original (Lá + terça Dó–Mi); compassos 5–8 com acompanhamento simplificado."
+  },
+  "secoes": [
+    {
+      "nome": "Abertura (compassos 1–4)",
+      "md": "B4:0.25 A4 G#4 A4 | C5:1 D5:0.25 C5 B4 C5 | E5:1 F5:0.25 E5 D#5 E5 | B5:0.25 A5 G#5 A5 B5 A5 G#5 A5 | C6:1 A5:0.5 C6",
+      "harmonia": "R:1 Am:2 Am:2 Am:2 Am:2",
+      "meAvancado": "R:1 A3:0.5 [C4 E4] [C4 E4] [C4 E4] | A3 [C4 E4] [C4 E4] [C4 E4] | A3 [C4 E4] A3 [C4 E4] | A3 [C4 E4] [C4 E4] [C4 E4]"
+    },
+    {
+      "nome": "Compassos 5–8",
+      "md": "B5:0.5 A5 G5 A5 | B5 A5 G5 A5 | B5 A5 G5 F#5 | E5:2",
+      "harmonia": "Em:2 Em:2 B7:2 Em:2"
+    }
+  ]
+}

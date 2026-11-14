@@ -3,6 +3,21 @@
 let ctx: AudioContext | null = null
 let master: GainNode | null = null
 
+// Quando o próprio app está tocando (demonstração, metrônomo, teclado da tela), o microfone
+// deve parar de ouvir para não reconhecer o som do celular como se fosse o aluno.
+let silencioAte = 0
+const agoraMs = () => (typeof performance !== 'undefined' ? performance.now() : Date.now())
+
+/** true enquanto o app está emitindo som (mais uma pequena cauda). */
+export function appTocandoSom(): boolean {
+  return ativas.size > 0 || agoraMs() < silencioAte
+}
+
+/** Contexto de áudio compartilhado (o microfone usa o mesmo, importante no iPhone). */
+export function obterContexto(): AudioContext | null {
+  return contexto()
+}
+
 function contexto(): AudioContext | null {
   if (typeof window === 'undefined') return null
   if (!ctx) {
@@ -33,6 +48,7 @@ const ativas = new Map<number, VozAtiva>()
 export function tocarNota(midi: number, intensidade = 0.9): void {
   const ac = contexto()
   if (!ac || !master) return
+  silencioAte = Math.max(silencioAte, agoraMs() + 400)
   pararNota(midi, 0.03)
   const t = ac.currentTime
   const f = frequencia(midi)
@@ -72,7 +88,27 @@ export function tocarNota(midi: number, intensidade = 0.9): void {
 }
 
 export function soltarNota(midi: number): void {
+  if (ativas.has(midi)) silencioAte = Math.max(silencioAte, agoraMs() + 450)
   pararNota(midi, 0.35)
+}
+
+/** Clique do metrônomo (forte = primeiro tempo do compasso). */
+export function tocarClique(forte: boolean, volume = 0.6): void {
+  const ac = contexto()
+  if (!ac || !master || volume <= 0) return
+  silencioAte = Math.max(silencioAte, agoraMs() + 90)
+  const t = ac.currentTime
+  const o = ac.createOscillator()
+  const g = ac.createGain()
+  o.type = 'square'
+  o.frequency.value = forte ? 1760 : 1175
+  g.gain.setValueAtTime(0.0001, t)
+  g.gain.exponentialRampToValueAtTime(0.4 * volume, t + 0.002)
+  g.gain.exponentialRampToValueAtTime(0.0001, t + 0.05)
+  o.connect(g)
+  g.connect(master)
+  o.start(t)
+  o.stop(t + 0.06)
 }
 
 function pararNota(midi: number, release: number): void {

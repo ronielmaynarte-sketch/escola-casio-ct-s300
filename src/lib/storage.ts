@@ -11,6 +11,7 @@ export type TipoAtividade =
   | 'verificacao_ok'
   | 'estudo'
   | 'conquista'
+  | 'musica'
 
 export interface Atividade {
   id: string

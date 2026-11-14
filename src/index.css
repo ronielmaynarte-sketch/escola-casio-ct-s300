@@ -29,3 +29,7 @@ body {
 .pagina { animation: surgir .28s ease-out; }
 
 .pb-seguro { padding-bottom: calc(env(safe-area-inset-bottom) + 5.5rem); }
+
+/* iPhone deitado: controles da tela de tocar mais baixos para sobrar espaço para o teclado */
+.controles-compactos > * { height: 2.1rem !important; font-size: 12px; padding-left: .55rem; padding-right: .55rem; border-radius: .7rem; }
+.controles-compactos svg { width: 14px; height: 14px; }
