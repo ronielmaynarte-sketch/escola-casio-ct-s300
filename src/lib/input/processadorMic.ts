@@ -19,6 +19,10 @@ export interface OpcoesProcessador {
   sensibilidade?: number
   /** clareza mínima para aceitar uma nota */
   clarezaMin?: number
+  /** Rejeita voz humana: exige ataque rápido (tecla) e altura estável, sem vibrato. */
+  rejeitarVoz?: boolean
+  /** Só aceita notas nesta faixa MIDI (ex.: as 5 teclas do exercício e vizinhas). */
+  faixa?: [number, number] | null
 }
 
 type Estado = 'silencio' | 'pendente' | 'soando'
@@ -32,6 +36,7 @@ export class ProcessadorMic {
   private ultimoAtaque = -Infinity
   private ataqueEm = 0
   private candidatoAnterior: number | null = null
+  private exatoAnterior = 0
   private soando: number[] = []
   private picoRms = 0
   private espectros: Float64Array[] = []
@@ -104,7 +109,9 @@ export class ProcessadorMic {
     const subindo = rec > 1.2 * anterior
     const porEnergia = subindo && (this.estado === 'silencio' ? rec > portao * 1.2 : rec > 1.35 * minRecente)
     const porClique = this.estado !== 'silencio' && minHf > 0 && hf > 2.2 * minHf && rec > 0.9 * anterior
-    const ataque = rec > portao && t - this.ultimoAtaque > 80 && (porEnergia || porClique)
+    // voz começa devagar; a tecla do teclado sobe a energia de uma vez (subida forte em ~50 ms)
+    const ataqueSeco = !this.op.rejeitarVoz || porClique || rec > 2.5 * Math.max(minRecente, portao * 0.5)
+    const ataque = rec > portao && t - this.ultimoAtaque > 80 && (porEnergia || porClique) && ataqueSeco
 
     if (ataque) {
       ev.push(...this.soltarTudo())
@@ -143,7 +150,7 @@ export class ProcessadorMic {
             this.trocaNota = m
             this.trocaCont = 1
           }
-          if (this.trocaCont >= 3 && m >= 36 && m <= 96) {
+          if (this.trocaCont >= 3 && m >= 36 && m <= 96 && !this.op.rejeitarVoz) {
             ev.push(...this.soltarTudo())
             ev.push({ tipo: 'on', midi: m })
             this.soando = [m]
@@ -191,7 +198,18 @@ export class ProcessadorMic {
         if (c >= 0.9 * r.clareza) m = e
       }
     }
-    const confirmado = this.candidatoAnterior === m || (r.clareza >= 0.95 && W >= 4096)
+    const faixa = this.op.faixa
+    if (faixa && (m < faixa[0] || m > faixa[1])) {
+      this.candidatoAnterior = null
+      return []
+    }
+    let confirmado = this.candidatoAnterior === m || (r.clareza >= 0.95 && W >= 4096)
+    if (this.op.rejeitarVoz) {
+      // tecla: afinação fixa e muito clara; voz: oscila (vibrato) e é menos periódica
+      const estavel = this.candidatoAnterior === m && Math.abs(exato - this.exatoAnterior) < 0.2
+      confirmado = estavel && desvio <= 0.3 && r.clareza >= 0.88
+    }
+    this.exatoAnterior = exato
     this.candidatoAnterior = m
     if (!confirmado) return []
     this.estado = 'soando'

@@ -32,7 +32,7 @@ class EntradaHub {
     this.mic = new EntradaMicrofone(
       (e) => this.emitir({ tipo: e.tipo, midi: e.midi, velocidade: 80, fonte: 'microfone', t: performance.now() }),
       () => this.mudou(),
-      { ruido: c?.ruidoMic ?? null, sensibilidade: c?.sensibilidadeMic ?? 1 },
+      { ruido: c?.ruidoMic ?? null, sensibilidade: c?.sensibilidadeMic ?? 1, rejeitarVoz: true },
     )
     this.midi = new EntradaMidi(
       (m) => this.emitir({ tipo: m.tipo, midi: m.midi, velocidade: m.velocidade, fonte: 'midi', t: performance.now() }),

@@ -23,7 +23,7 @@ export class EntradaMicrofone {
   constructor(
     private aoEvento: (e: EventoMic) => void,
     private aoMudar: () => void,
-    public opcoes: OpcoesProcessador = {},
+    public opcoes: OpcoesProcessador = { rejeitarVoz: true },
   ) {}
 
   async iniciar(): Promise<void> {

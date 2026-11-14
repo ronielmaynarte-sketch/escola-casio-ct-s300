@@ -12,6 +12,7 @@ import Tocar from './pages/Tocar'
 import Importar from './pages/Importar'
 import MeuProgresso from './pages/MeuProgresso'
 import Configuracoes from './pages/Configuracoes'
+import CincoDedos from './pages/CincoDedos'
 
 export default function App() {
   return (
@@ -34,6 +35,7 @@ export default function App() {
             <Route path="importar" element={<Importar />} />
             <Route path="meu-progresso" element={<MeuProgresso />} />
             <Route path="config" element={<Configuracoes />} />
+            <Route path="cinco-teclas" element={<CincoDedos />} />
             <Route
               path="admin"
               element={<EmConstrucao titulo="Administração" etapa={5} descricao="O painel para editar aulas e músicas depende de login e banco de dados (ex.: Supabase), que ainda não foram configurados." />}

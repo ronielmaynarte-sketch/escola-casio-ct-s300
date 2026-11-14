@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { NavLink, Outlet, useLocation } from 'react-router-dom'
-import { BarChart3, BookOpen, Home, Music2, SlidersHorizontal } from 'lucide-react'
+import { BarChart3, Hand, Home, Music2, SlidersHorizontal } from 'lucide-react'
 import { useProgresso } from '../lib/ProgressContext'
 import { CONQUISTAS } from '../lib/curso'
 
@@ -8,7 +8,7 @@ const ITENS = [
   { to: '/', label: 'Painel', Icon: Home, end: true },
   { to: '/musicas', label: 'Músicas', Icon: Music2 },
   { to: '/progresso', label: 'Progresso', Icon: BarChart3 },
-  { to: '/dicionario', label: 'Dicionário', Icon: BookOpen },
+  { to: '/cinco-teclas', label: '5 Teclas', Icon: Hand },
   { to: '/config', label: 'Ajustes', Icon: SlidersHorizontal },
 ]
 

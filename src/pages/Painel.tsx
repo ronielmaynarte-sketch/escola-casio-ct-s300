@@ -47,6 +47,7 @@ export default function Painel() {
 
       <nav aria-label="Menu principal" className="grid grid-cols-3 gap-2 sm:grid-cols-3" data-testid="menu-principal">
         <ItemMenu Icon={GraduationCap} rotulo="Aprender do zero" onClick={continuar} destaque />
+        <ItemMenu Icon={Hand} rotulo="5 Teclas: Dó Ré Mi Fá Sol (uma mão)" to="/cinco-teclas" />
         <ItemMenu Icon={Library} rotulo="Biblioteca de músicas" to="/musicas" />
         <ItemMenu Icon={Music} rotulo="Músicas de Luiz Gonzaga" to="/musicas?cat=gonzaga" />
         <ItemMenu Icon={Sparkles} rotulo="Músicas famosas de piano" to="/musicas?cat=classicas" />
