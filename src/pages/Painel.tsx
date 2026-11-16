@@ -47,6 +47,7 @@ export default function Painel() {
 
       <nav aria-label="Menu principal" className="grid grid-cols-3 gap-2 sm:grid-cols-3" data-testid="menu-principal">
         <ItemMenu Icon={GraduationCap} rotulo="Aprender do zero" onClick={continuar} destaque />
+        <ItemMenu Icon={Piano} rotulo="Teclado Fácil (notas caindo)" href={`${import.meta.env.BASE_URL}teclado-facil.html`} destaque />
         <ItemMenu Icon={Hand} rotulo="5 Teclas: Dó Ré Mi Fá Sol (uma mão)" to="/cinco-teclas" />
         <ItemMenu Icon={Library} rotulo="Biblioteca de músicas" to="/musicas" />
         <ItemMenu Icon={Music} rotulo="Músicas de Luiz Gonzaga" to="/musicas?cat=gonzaga" />
@@ -171,7 +172,7 @@ function Info({ Icon, valor, rotulo }: { Icon: typeof Clock; valor: string; rotu
   )
 }
 
-function ItemMenu({ Icon, rotulo, to, onClick, destaque, espelhar }: { Icon: LucideIcon; rotulo: string; to?: string; onClick?: () => void; destaque?: boolean; espelhar?: boolean }) {
+function ItemMenu({ Icon, rotulo, to, href, onClick, destaque, espelhar }: { Icon: LucideIcon; rotulo: string; to?: string; href?: string; onClick?: () => void; destaque?: boolean; espelhar?: boolean }) {
   const cls = `flex min-h-[84px] flex-col items-center justify-center gap-1.5 rounded-2xl border p-2 text-center text-[12px] font-semibold leading-tight active:scale-[0.97] ${
     destaque ? 'border-amber-400/50 bg-amber-400/15 text-amber-100' : 'border-white/10 bg-white/[0.04] text-slate-100'
   }`
@@ -181,6 +182,12 @@ function ItemMenu({ Icon, rotulo, to, onClick, destaque, espelhar }: { Icon: Luc
       {rotulo}
     </>
   )
+  if (href)
+    return (
+      <a href={href} className={cls}>
+        {conteudo}
+      </a>
+    )
   return to ? (
     <Link to={to} className={cls}>
       {conteudo}
