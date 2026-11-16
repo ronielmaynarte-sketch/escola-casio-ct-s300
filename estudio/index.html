@@ -23,6 +23,9 @@ textarea{min-height:120px;resize:vertical}
 .vid video{width:100%;border-radius:12px;background:#000;max-height:70vh}
 .vid h3{margin:8px 0 4px;font-size:17px}.vid a{color:var(--acc)}
 .vid details{color:var(--mut);font-size:14px;white-space:pre-wrap}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.btns button,.btns a{flex:1 1 45%;text-align:center;padding:11px;border-radius:12px;border:1px solid var(--line);background:#0f0f13;color:var(--txt);font-size:14px;text-decoration:none}
+.meta{color:var(--mut);font-size:13px}.desc{font-size:14px;margin:6px 0}
+#busca{margin-bottom:10px}
 ol{padding-left:20px;color:var(--mut)}ol b{color:var(--txt)}
 </style>
 </head>
@@ -48,7 +51,8 @@ ol{padding-left:20px;color:var(--mut)}ol b{color:var(--txt)}
 </div>
 
 <div class="card">
-  <h2 style="margin:0 0 6px;font-size:20px">Vídeos prontos</h2>
+  <h2 style="margin:0 0 6px;font-size:20px">📁 Meus vídeos</h2>
+  <input id="busca" placeholder="Procurar vídeo…">
   <div id="lista"><p class="hint">Carregando…</p></div>
 </div>
 
@@ -78,23 +82,33 @@ document.getElementById("go").onclick = () => {
   const corpo = `modo: ${modo}\nformato: ${document.getElementById("formato").value}\nduracao: ${document.getElementById("duracao").value}\n---\n${t}`;
   location.href = `https://github.com/${REPO}/issues/new?title=${encodeURIComponent(titulo)}&body=${encodeURIComponent(corpo)}`;
 };
-fetch(`https://api.github.com/repos/${REPO}/releases?per_page=20`).then(r => r.json()).then(rs => {
-  const el = document.getElementById("lista");
-  const vs = (rs || []).filter(r => r.tag_name && r.tag_name.startsWith("video-"));
+let VIDS = [];
+function copiar(t, b){ navigator.clipboard.writeText(t).then(()=>{ const o=b.textContent; b.textContent="✅ Copiado"; setTimeout(()=>b.textContent=o,1500); }); }
+function mostrar(q){
+  const el = document.getElementById("lista"); q = (q||"").toLowerCase();
+  const vs = VIDS.filter(v => !q || (v.titulo+" "+v.pedido+" "+v.hashtags).toLowerCase().includes(q));
   if (!vs.length) { el.innerHTML = '<p class="hint">Nenhum vídeo ainda.</p>'; return; }
   el.innerHTML = "";
-  vs.forEach(r => {
-    const mp4 = r.assets.find(a => a.name.endsWith(".mp4"));
-    if (!mp4) return;
+  vs.forEach(v => {
     const d = document.createElement("div"); d.className = "vid";
-    d.innerHTML = `<video controls playsinline preload="metadata" src="${mp4.browser_download_url}"></video>
-      <h3></h3><a href="${mp4.browser_download_url}" download>⬇️ Baixar vídeo</a>
-      <details><summary>Título, descrição, hashtags e créditos</summary><div class="pub"></div></details>`;
-    d.querySelector("h3").textContent = r.name;
-    d.querySelector(".pub").textContent = r.body || "";
+    d.innerHTML = `<video controls playsinline preload="none" poster="${v.capa}" src="${v.video}"></video>
+      <h3></h3><div class="meta"></div><div class="desc"></div>
+      <div class="btns"><a href="${v.video}" download="video-${v.n}.mp4">⬇️ Baixar</a>
+      <button data-k="t">📋 Título</button><button data-k="d">📋 Descrição + hashtags</button><button data-k="c">📋 Créditos</button></div>
+      <details><summary>Créditos</summary><div class="pub"></div></details>`;
+    d.querySelector("h3").textContent = v.titulo;
+    d.querySelector(".meta").textContent = `#${v.n} · ${v.data} · ${Math.round(v.duracao||0)} s · pedido: ${v.pedido}`;
+    d.querySelector(".desc").textContent = v.descricao + "\n" + v.hashtags;
+    const cred = (v.creditos||[]).join("\n");
+    d.querySelector(".pub").textContent = cred;
+    d.querySelectorAll("button").forEach(b => b.onclick = () => copiar(
+      b.dataset.k==="t" ? v.titulo : b.dataset.k==="d" ? v.descricao+"\n\n"+v.hashtags : "Créditos:\n"+cred, b));
     el.appendChild(d);
   });
-}).catch(() => document.getElementById("lista").innerHTML = '<p class="hint">Não consegui carregar a lista agora.</p>');
+}
+document.getElementById("busca").oninput = e => mostrar(e.target.value);
+fetch("videos.json?t=" + Date.now()).then(r => r.ok ? r.json() : []).then(vs => { VIDS = vs || []; mostrar(""); })
+  .catch(() => { VIDS = []; mostrar(""); });
 </script>
 </body>
 </html>
