@@ -1,7 +1,7 @@
 name: Estúdio de Vídeos
 on:
   issues:
-    types: [opened]
+    types: [opened, reopened]
 permissions:
   contents: write
   issues: write
@@ -28,6 +28,16 @@ jobs:
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu > /dev/null
           pip install -q edge-tts numpy
+      - name: Conferir chaves
+        id: chk
+        run: |
+          F=""
+          [ -z "$GEMINI_API_KEY" ] && F="$F GEMINI_API_KEY"
+          [ -z "$ELEVENLABS_API_KEY$ELEVENLABS_API_KEYS" ] && echo "Sem ElevenLabs: usando voz gratuita"
+          if [ -n "$F" ]; then
+            gh issue comment $N -b "🔑 Falta cadastrar a chave:$F. Abra Settings > Secrets and variables > Actions > New repository secret, cole a chave e depois toque em Reabrir (Reopen) neste pedido."
+            exit 1
+          fi
       - name: Ler pedido
         working-directory: estudio
         env:
@@ -50,5 +60,5 @@ jobs:
           gh issue comment $N -F c.md
           gh issue close $N
       - name: Avisar erro
-        if: failure()
+        if: failure() && steps.chk.outcome != 'failure'
         run: gh issue comment $N -b "❌ Deu erro. Veja o log em https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
