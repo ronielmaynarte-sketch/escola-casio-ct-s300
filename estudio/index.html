@@ -26,6 +26,13 @@ textarea{min-height:120px;resize:vertical}
 .btns{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.btns button,.btns a{flex:1 1 45%;text-align:center;padding:11px;border-radius:12px;border:1px solid var(--line);background:#0f0f13;color:var(--txt);font-size:14px;text-decoration:none}
 .meta{color:var(--mut);font-size:13px}.desc{font-size:14px;margin:6px 0}
 #busca{margin-bottom:10px}
+.tabs{display:flex;gap:6px;position:sticky;top:0;background:var(--bg);padding:10px 0;z-index:5}
+.tabs button{flex:1;padding:11px 4px;border-radius:12px;border:1px solid var(--line);background:#0f0f13;color:var(--txt);font-size:14px}
+.tabs button.on{background:var(--acc);color:#111;font-weight:700;border-color:var(--acc)}
+.aba{display:none}.aba.on{display:block}
+.prod{border-top:1px solid var(--line);padding:12px 0}.prod:first-child{border-top:0}
+.bar{height:10px;background:#0f0f13;border-radius:6px;overflow:hidden;margin:8px 0}.bar i{display:block;height:100%;background:var(--acc);transition:width .5s}
+.etapas{font-size:13px;color:var(--mut);line-height:1.7}
 ol{padding-left:20px;color:var(--mut)}ol b{color:var(--txt)}
 </style>
 </head>
@@ -33,6 +40,8 @@ ol{padding-left:20px;color:var(--mut)}ol b{color:var(--txt)}
 <h1>🎬 Estúdio de Vídeos</h1>
 <p class="sub">Digite o tema ou cole o roteiro. O vídeo fica pronto em 5 a 10 minutos.</p>
 
+<div class="tabs"><button data-a="criar" class="on">➕ Criar</button><button data-a="prod">⏳ Em produção <span id="nprod"></span></button><button data-a="meus">📁 Meus vídeos</button></div>
+<div class="aba on" id="aba-criar">
 <div class="card">
   <div class="seg" id="modo">
     <button data-v="tema" class="on">Tema ou título</button>
@@ -50,12 +59,20 @@ ol{padding-left:20px;color:var(--mut)}ol b{color:var(--txt)}
   <p class="hint">Abre o GitHub com o pedido pronto: é só tocar em <b>Create / Submit</b>. Precisa estar logado no GitHub.</p>
 </div>
 
+</div>
+<div class="aba" id="aba-prod"><div class="card">
+  <h2 style="margin:0 0 6px;font-size:20px">⏳ Em produção</h2>
+  <p class="hint" style="margin-top:0">Atualiza sozinho a cada minuto.</p>
+  <div id="prodlista"><p class="hint">Carregando…</p></div>
+</div></div>
+<div class="aba" id="aba-meus">
 <div class="card">
   <h2 style="margin:0 0 6px;font-size:20px">📁 Meus vídeos</h2>
   <input id="busca" placeholder="Procurar vídeo…">
   <div id="lista"><p class="hint">Carregando…</p></div>
 </div>
 
+</div>
 <div class="card">
   <h2 style="margin:0 0 6px;font-size:20px">🔑 Trocar chaves</h2>
   <ol>
@@ -109,6 +126,53 @@ function mostrar(q){
 document.getElementById("busca").oninput = e => mostrar(e.target.value);
 fetch("videos.json?t=" + Date.now()).then(r => r.ok ? r.json() : []).then(vs => { VIDS = vs || []; mostrar(""); })
   .catch(() => { VIDS = []; mostrar(""); });
+
+function abrir(a){ document.querySelectorAll(".tabs button").forEach(b=>b.classList.toggle("on",b.dataset.a===a));
+  document.querySelectorAll(".aba").forEach(x=>x.classList.toggle("on",x.id==="aba-"+a)); if(a==="prod") prod(); }
+document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>abrir(b.dataset.a));
+if (location.hash==="#prod") abrir("prod"); if (location.hash==="#meus") abrir("meus");
+const NOMES={"Conferir chaves":"🔑 Conferindo chaves","Ler pedido":"📝 Lendo o pedido","Diretor (Gemini)":"🎬 Escrevendo roteiro e plano","Renderizar":"🎞️ Buscando mídia, narração e montando","Publicar":"📦 Finalizando","Guardar no sistema":"💾 Guardando no sistema","Avisar pronto":"✅ Pronto"};
+function tempo(ms){ const m=Math.floor(ms/60000), s=Math.floor(ms/1000)%60; return m+" min "+String(s).padStart(2,"0")+" s"; }
+async function prod(){
+  const el=document.getElementById("prodlista");
+  try{
+    const r=await fetch(`https://api.github.com/repos/${REPO}/actions/workflows/estudio.yml/runs?per_page=10`);
+    if(!r.ok) throw 0;
+    const runs=(await r.json()).workflow_runs||[];
+    const agora=Date.now();
+    const vivos=runs.filter(x=>x.status!=="completed");
+    const erros=runs.filter(x=>x.status==="completed"&&x.conclusion==="failure"&&agora-new Date(x.updated_at)<6*3600e3);
+    document.getElementById("nprod").textContent=vivos.length?"("+vivos.length+")":"";
+    if(!vivos.length&&!erros.length){ el.innerHTML='<p class="hint">Nenhum vídeo sendo criado agora.</p>'; return; }
+    el.innerHTML="";
+    for(const x of vivos){
+      let etapas=[];
+      try{ const j=await (await fetch(x.jobs_url)).json(); etapas=((j.jobs||[])[0]||{}).steps||[]; }catch(e){}
+      const nossas=etapas.filter(e=>NOMES[e.name]);
+      const feitas=nossas.filter(e=>e.status==="completed").length;
+      const atual=nossas.find(e=>e.status==="in_progress");
+      const pct=nossas.length?Math.max(5,Math.round(100*feitas/nossas.length)):3;
+      const d=document.createElement("div"); d.className="prod";
+      d.innerHTML=`<h3 style="margin:0 0 4px;font-size:17px"></h3><div class="meta"></div><div class="bar"><i style="width:${pct}%"></i></div><div class="etapas"></div>`;
+      d.querySelector("h3").textContent=(x.display_title||"").replace("🎬","").trim();
+      d.querySelector(".meta").textContent=(x.status==="queued"?"Na fila":"Agora: "+(atual?NOMES[atual.name]:"Preparando"))+" · "+tempo(agora-new Date(x.run_started_at||x.created_at));
+      d.querySelector(".etapas").innerHTML=nossas.map(e=>(e.status==="completed"?(e.conclusion==="success"?"✔️ ":"❌ "):e.status==="in_progress"?"⏳ ":"▫️ ")+NOMES[e.name]).join("<br>");
+      el.appendChild(d);
+    }
+    for(const x of erros){
+      const d=document.createElement("div"); d.className="prod";
+      d.innerHTML=`<h3 style="margin:0 0 4px;font-size:17px"></h3><div class="meta">❌ Deu erro. Reabra o pedido no GitHub para tentar de novo.</div><div class="btns"><a target="_blank">Ver pedido</a></div>`;
+      d.querySelector("h3").textContent=(x.display_title||"").replace("🎬","").trim();
+      d.querySelector("a").href=x.html_url;
+      el.appendChild(d);
+    }
+  }catch(e){ el.innerHTML='<p class="hint">Não consegui ver a produção agora. Tento de novo em instantes.</p>'; }
+}
+prod(); let ciclo=0;
+setInterval(()=>{ if(document.hidden) return; ciclo++;
+  const aberta=document.getElementById("aba-prod").classList.contains("on");
+  if(aberta||ciclo%3===0) prod(); }, 60000);
+document.addEventListener("visibilitychange",()=>{ if(!document.hidden&&document.getElementById("aba-prod").classList.contains("on")) prod(); });
 </script>
 </body>
 </html>
