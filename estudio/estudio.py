@@ -392,7 +392,7 @@ TRANS = ["fadeblack", "smoothleft", "zoomin", "smoothup", "dissolve", "circlecro
 
 def main(plan_path, outdir):
     plan = json.load(open(plan_path))
-    os.makedirs(outdir, exist_ok=True)
+    outdir = os.path.abspath(outdir); os.makedirs(outdir, exist_ok=True)
     work = os.path.join(outdir, "work"); os.makedirs(work, exist_ok=True)
     vertical = plan.get("formato", "9:16") == "9:16"
     W, H = (1080, 1920) if vertical else (1920, 1080)
