@@ -1,0 +1,54 @@
+name: Estúdio de Vídeos
+on:
+  issues:
+    types: [opened]
+permissions:
+  contents: write
+  issues: write
+concurrency: estudio
+jobs:
+  video:
+    if: startsWith(github.event.issue.title, '🎬') && github.event.issue.user.login == github.repository_owner
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      ELEVENLABS_API_KEYS: ${{ secrets.ELEVENLABS_API_KEYS }}
+      PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+      FREESOUND_API_KEY: ${{ secrets.FREESOUND_API_KEY }}
+      PIXABAY_VIDEOS: "1"
+      GH_TOKEN: ${{ github.token }}
+      N: ${{ github.event.issue.number }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Avisar que começou
+        run: gh issue comment $N -b "⏳ Fazendo o vídeo... leva uns 5 a 10 minutos."
+      - name: Instalar ferramentas
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu > /dev/null
+          pip install -q edge-tts numpy
+      - name: Ler pedido
+        working-directory: estudio
+        env:
+          BODY: ${{ github.event.issue.body }}
+          TITLE: ${{ github.event.issue.title }}
+        run: python3 ler_pedido.py
+      - name: Diretor (Gemini)
+        working-directory: estudio
+        run: python3 -c "import json,subprocess,sys;a=json.load(open('args.json'));sys.exit(subprocess.call(['python3','diretor.py',*a,'-o','plano.json']))"
+      - name: Renderizar
+        working-directory: estudio
+        run: python3 estudio.py plano.json saida
+      - name: Publicar
+        working-directory: estudio/saida
+        run: |
+          F=$(ls *.mp4 | head -1); mv "$F" video-$N.mp4
+          gh release create video-$N video-$N.mp4 publicacao.txt --title "$(head -1 publicacao.txt | sed 's/^TÍTULO: //')" --notes-file publicacao.txt
+          URL="https://github.com/${{ github.repository }}/releases/download/video-$N/video-$N.mp4"
+          { echo "✅ Vídeo pronto: $URL"; echo; echo '```'; cat publicacao.txt; echo '```'; } > c.md
+          gh issue comment $N -F c.md
+          gh issue close $N
+      - name: Avisar erro
+        if: failure()
+        run: gh issue comment $N -b "❌ Deu erro. Veja o log em https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"

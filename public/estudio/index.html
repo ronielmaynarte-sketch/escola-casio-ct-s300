@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Estúdio">
+<title>Estúdio de Vídeos</title>
+<style>
+:root{--bg:#0d0d10;--card:#17171c;--line:#2a2a33;--txt:#f2f2f2;--mut:#9a9aa6;--acc:#ffd23f}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.45 -apple-system,system-ui,sans-serif;padding:env(safe-area-inset-top) 16px 40px}
+h1{font-size:26px;margin:22px 0 4px}p.sub{color:var(--mut);margin:0 0 18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:16px}
+label{display:block;font-weight:600;margin:12px 0 6px}
+textarea,select,input{width:100%;background:#0f0f13;color:var(--txt);border:1px solid var(--line);border-radius:12px;padding:12px;font-size:16px}
+textarea{min-height:120px;resize:vertical}
+.seg{display:flex;gap:8px}.seg button{flex:1;padding:12px;border-radius:12px;border:1px solid var(--line);background:#0f0f13;color:var(--txt);font-size:15px}
+.seg button.on{background:var(--acc);color:#111;border-color:var(--acc);font-weight:700}
+.row{display:flex;gap:10px}.row>div{flex:1}
+.go{width:100%;margin-top:16px;padding:16px;border:0;border-radius:14px;background:var(--acc);color:#111;font-size:18px;font-weight:800}
+.hint{color:var(--mut);font-size:14px;margin-top:10px}
+.vid{border-top:1px solid var(--line);padding:14px 0}.vid:first-child{border-top:0}
+.vid video{width:100%;border-radius:12px;background:#000;max-height:70vh}
+.vid h3{margin:8px 0 4px;font-size:17px}.vid a{color:var(--acc)}
+.vid details{color:var(--mut);font-size:14px;white-space:pre-wrap}
+ol{padding-left:20px;color:var(--mut)}ol b{color:var(--txt)}
+</style>
+</head>
+<body>
+<h1>🎬 Estúdio de Vídeos</h1>
+<p class="sub">Digite o tema ou cole o roteiro. O vídeo fica pronto em 5 a 10 minutos.</p>
+
+<div class="card">
+  <div class="seg" id="modo">
+    <button data-v="tema" class="on">Tema ou título</button>
+    <button data-v="roteiro">Roteiro pronto</button>
+  </div>
+  <label id="lbl" for="texto">Tema</label>
+  <textarea id="texto" placeholder="Ex.: A queda do Império Romano"></textarea>
+  <div class="row">
+    <div><label for="formato">Formato</label>
+      <select id="formato"><option value="9:16">Vertical (Shorts/Reels)</option><option value="16:9">Horizontal (YouTube)</option></select></div>
+    <div><label for="duracao">Duração</label>
+      <select id="duracao"><option>30</option><option selected>50</option><option>60</option><option>90</option><option>120</option></select></div>
+  </div>
+  <button class="go" id="go">Criar vídeo</button>
+  <p class="hint">Abre o GitHub com o pedido pronto: é só tocar em <b>Create / Submit</b>. Precisa estar logado no GitHub.</p>
+</div>
+
+<div class="card">
+  <h2 style="margin:0 0 6px;font-size:20px">Vídeos prontos</h2>
+  <div id="lista"><p class="hint">Carregando…</p></div>
+</div>
+
+<div class="card">
+  <h2 style="margin:0 0 6px;font-size:20px">🔑 Trocar chaves</h2>
+  <ol>
+    <li>Abra <a id="sec" style="color:var(--acc)">Configurações de chaves</a>.</li>
+    <li>Toque na chave (ex.: <b>ELEVENLABS_API_KEY</b>) → <b>Update</b> → cole a nova.</li>
+    <li>Para várias ElevenLabs que trocam sozinhas: crie <b>ELEVENLABS_API_KEYS</b> com as chaves separadas por vírgula.</li>
+  </ol>
+  <p class="hint">Chaves usadas: GEMINI_API_KEY, ELEVENLABS_API_KEY, PIXABAY_API_KEY, FREESOUND_API_KEY.</p>
+</div>
+
+<script>
+const REPO = "ronielmaynarte-sketch/escola-casio-ct-s300";
+document.getElementById("sec").href = `https://github.com/${REPO}/settings/secrets/actions`;
+let modo = "tema";
+document.querySelectorAll("#modo button").forEach(b => b.onclick = () => {
+  document.querySelectorAll("#modo button").forEach(x => x.classList.remove("on")); b.classList.add("on"); modo = b.dataset.v;
+  document.getElementById("lbl").textContent = modo === "tema" ? "Tema" : "Roteiro";
+  document.getElementById("texto").placeholder = modo === "tema" ? "Ex.: A queda do Império Romano" : "Cole aqui o roteiro completo";
+});
+document.getElementById("go").onclick = () => {
+  const t = document.getElementById("texto").value.trim();
+  if (!t) { alert("Escreva o tema ou o roteiro."); return; }
+  const titulo = "🎬 " + t.split("\n")[0].slice(0, 70);
+  const corpo = `modo: ${modo}\nformato: ${document.getElementById("formato").value}\nduracao: ${document.getElementById("duracao").value}\n---\n${t}`;
+  location.href = `https://github.com/${REPO}/issues/new?title=${encodeURIComponent(titulo)}&body=${encodeURIComponent(corpo)}`;
+};
+fetch(`https://api.github.com/repos/${REPO}/releases?per_page=20`).then(r => r.json()).then(rs => {
+  const el = document.getElementById("lista");
+  const vs = (rs || []).filter(r => r.tag_name && r.tag_name.startsWith("video-"));
+  if (!vs.length) { el.innerHTML = '<p class="hint">Nenhum vídeo ainda.</p>'; return; }
+  el.innerHTML = "";
+  vs.forEach(r => {
+    const mp4 = r.assets.find(a => a.name.endsWith(".mp4"));
+    if (!mp4) return;
+    const d = document.createElement("div"); d.className = "vid";
+    d.innerHTML = `<video controls playsinline preload="metadata" src="${mp4.browser_download_url}"></video>
+      <h3></h3><a href="${mp4.browser_download_url}" download>⬇️ Baixar vídeo</a>
+      <details><summary>Título, descrição, hashtags e créditos</summary><div class="pub"></div></details>`;
+    d.querySelector("h3").textContent = r.name;
+    d.querySelector(".pub").textContent = r.body || "";
+    el.appendChild(d);
+  });
+}).catch(() => document.getElementById("lista").innerHTML = '<p class="hint">Não consegui carregar a lista agora.</p>');
+</script>
+</body>
+</html>
