@@ -54,9 +54,30 @@ jobs:
         working-directory: estudio/saida
         run: |
           F=$(ls *.mp4 | head -1); mv "$F" video-$N.mp4
+          gh release delete video-$N -y --cleanup-tag 2>/dev/null || true
           gh release create video-$N video-$N.mp4 publicacao.txt --title "$(head -1 publicacao.txt | sed 's/^TÍTULO: //')" --notes-file publicacao.txt
-          URL="https://github.com/${{ github.repository }}/releases/download/video-$N/video-$N.mp4"
-          { echo "✅ Vídeo pronto: $URL"; echo; echo '```'; cat publicacao.txt; echo '```'; } > c.md
+      - name: Guardar no sistema
+        env:
+          TITLE: ${{ github.event.issue.title }}
+        run: |
+          cd estudio/saida
+          ffmpeg -v error -y -i video-$N.mp4 -c:v libx264 -preset medium -crf 25 -maxrate 3M -bufsize 6M -c:a aac -b:a 128k -movflags +faststart site.mp4
+          ffmpeg -v error -y -ss 1.5 -i video-$N.mp4 -frames:v 1 -vf scale=540:-2 -q:v 4 capa.jpg
+          export DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 site.mp4)
+          cd "$GITHUB_WORKSPACE"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch -q --depth=1 origin gh-pages
+          git worktree add -q /tmp/gp FETCH_HEAD
+          mkdir -p /tmp/gp/estudio/videos
+          cp estudio/saida/site.mp4 /tmp/gp/estudio/videos/video-$N.mp4
+          cp estudio/saida/capa.jpg /tmp/gp/estudio/videos/video-$N.jpg
+          python3 estudio/indexar.py /tmp/gp/estudio/videos.json $N estudio/saida/publicacao.txt "$TITLE"
+          cd /tmp/gp && git add -A && git commit -qm "Vídeo $N no sistema" && git push -q origin HEAD:gh-pages
+      - name: Avisar pronto
+        working-directory: estudio/saida
+        run: |
+          { echo "✅ Vídeo pronto e guardado no sistema: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/estudio/"; echo; echo '```'; cat publicacao.txt; echo '```'; } > c.md
           gh issue comment $N -F c.md
           gh issue close $N
       - name: Avisar erro
