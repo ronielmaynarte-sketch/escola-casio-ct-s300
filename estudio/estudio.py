@@ -321,7 +321,8 @@ def render_shot(media, path_in, out, W, H, D, cam, grade, idx, punch=False):
         ss = min(L, 0.6 + (idx * 1.7) % max(0.1, L)) if L > 0 else 0
         inp = ["-ss", f"{ss:.2f}", "-t", f"{D:.3f}", "-i", path_in]
         # clipe curto: congela o último quadro em vez de tela preta
-        vf = "tpad=stop_mode=clone:stop_duration=4," + vf
+        # normaliza fps (fontes 24/25/60 fps encurtavam o plano no zoompan) e garante a duração
+        vf = f"fps={FPS},tpad=stop_mode=clone:stop_duration=4," + vf + ",tpad=stop_mode=clone:stop_duration=2"
     run(["ffmpeg", "-y", *inp, "-vf", vf, "-t", f"{D:.3f}", "-r", str(FPS), "-an",
          "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", out])
 
